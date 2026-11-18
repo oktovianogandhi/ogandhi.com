@@ -8,8 +8,8 @@ The key file static/<key>.txt is copied to the site root by build.py; keep it th
 """
 import json
 import re
+import subprocess
 import sys
-import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).parent
@@ -22,7 +22,9 @@ else:
     urls = re.findall(r"<loc>([^<]+)</loc>", (ROOT / "docs" / "sitemap.xml").read_text(encoding="utf-8"))
 
 body = json.dumps({"host": HOST, "key": KEY, "keyLocation": f"https://{HOST}/{KEY}.txt", "urlList": urls}).encode()
-req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body,
-                             headers={"Content-Type": "application/json; charset=utf-8"})
-with urllib.request.urlopen(req, timeout=30) as r:
-    print(r.status, f"submitted {len(urls)} URLs")
+# curl, not urllib: python.org Python on this Mac lacks the system certificates.
+r = subprocess.run(["curl", "-sS", "-m", "30", "-o", "/dev/null", "-w", "%{http_code}", "-X", "POST",
+                    "-H", "Content-Type: application/json; charset=utf-8", "--data-binary", "@-",
+                    "https://api.indexnow.org/indexnow"], input=body, capture_output=True)
+code = r.stdout.decode().strip()
+print(code, f"submitted {len(urls)} URLs" if code in ("200", "202") else (r.stderr.decode() or "failed"))
