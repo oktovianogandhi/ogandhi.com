@@ -1,25 +1,31 @@
 ---
-title: Grid integration of PV and battery storage
-slug: topics/grid-integration
+title: Grid integration, ancillary services, and regulation
+slug: expertise/grid-integration
 tag: grid
-description: Oktoviano Gandhi's work on integrating solar PV and battery storage into power systems: high PV penetration, reactive power and ancillary services, solar forecasting, and the cost of PV integration.
-summary: What happens to a power system as PV grows, and how batteries, inverters and forecasts can keep it stable.
+order: 2
+description: Oktoviano Gandhi's work on integrating solar PV and battery storage into power systems: hosting limits at high PV penetration, the cost of integration measures, reactive power and ancillary services, behind-the-meter storage, and regulation in Indonesia and Singapore.
+summary: How much solar PV and battery storage a power system can take, which integration measures cost least, and how regulation and markets can make them happen.
 ---
 
-As the share of solar PV in a power system grows, operators have to manage voltage, frequency, reserves and forecast errors in new ways. Much of my work asks what limits PV in a given network, what can be done about it, and what each option costs.
+As the share of solar PV grows, system operators have to manage voltage, frequency, reserves, and forecast errors in new ways, and regulators have to decide who provides these services and who pays for them. My work connects the engineering to the economics and the rules: what limits PV in a given network, which measures address it, what each one costs, and how the regulatory framework can put them in place.
 
 ## What I have worked on
 
-- **Limits and solutions at high PV penetration.** *Review of power system impacts at high PV penetration Part I: Factors limiting PV penetration* and its companion *Part II: Potential solutions and the way forward* (Solar Energy, 2020) are my most cited papers.
-- **Reactive power and ancillary services from PV inverters.** My PhD at the National University of Singapore looked at using PV inverters to support the grid, including the cost of the extra wear on the inverter. It became the book *Reactive Power Support Using Photovoltaic Systems: Techno-Economic Analysis and Implementation Algorithms* (Springer Theses, 2020).
-- **Solar forecasting.** I led the PV grid integration working group of a solar forecasting programme for the Energy Market Authority and Singapore Power. *The value of solar forecasts and the cost of their errors: A review* (Renewable and Sustainable Energy Reviews, 2024) reviews what solar forecasts are worth and what their errors cost.
-- **The cost of integrating PV.** *Levelised cost of PV integration for distribution networks* (Renewable and Sustainable Energy Reviews, 2022) proposes a levelised cost for integrating PV into distribution networks.
-- **Battery storage.** *Effects of ‘invisible’ energy storage on power system operations* (Journal of Energy Storage, 2022).
-- **Regulation in Indonesia.** With Energynautics and UMBRA, I was one of three main authors of two studies for GIZ and Indonesia's Ministry of Energy and Mineral Resources: a comparative study of ancillary services, and a regulatory framework and business model for battery energy storage systems.
+- **What limits PV, and what can be done about it.** A two-part review of how high PV penetration affects voltage, frequency, protection, harmonics, rotor angle stability, and flexibility requirements, with the penetration limits reported in the literature and the tools needed to check them. The second part assesses the solutions (forecasting, voltage and frequency regulation, harmonic compensation, reactive power management, generator planning and dispatch, and adaptive protection), what limits their implementation, and who bears their cost. They are my most cited papers.
+- **The cost of integrating PV.** I proposed a levelised cost of PV integration: the capital and operating cost of an integration measure divided by the PV energy generated over its lifetime. On 69-bus and 119-bus distribution networks with real weather and price data, combined active and reactive power control was the most cost-effective way to mitigate overvoltage, followed closely by reactive power control and curtailment. Battery storage would need to become more than 80% cheaper to be viable for overvoltage mitigation alone.
+- **Reactive power from PV inverters.** My PhD at the National University of Singapore (NUS) priced the reactive power that PV inverters can supply to the grid, including the cost of the extra wear on the inverter. Lifetime reduction made up more than half of that cost at low PV penetration, and less at high penetration, when the support is spread over more systems. The work identified the range of incentives that would make the service worthwhile for PV owners, and local control methods that perform almost as well as centralised optimisation without any communication between inverters.
+- **Behind-the-meter storage that operators cannot see.** Batteries that are netted out with customer load and not dispatched by the operator increased ramping requirements, made net demand and prices more volatile, and raised system operating cost on a standard test system. Operators should assess this effect in their own networks before such storage becomes widespread.
 
-## Questions this work helps answer
+## Where I have applied it
 
-- How much PV can a network take before voltage, frequency or reserves become a problem?
-- Which ancillary services should PV and batteries provide, and how should they be paid for?
-- What is a better solar forecast worth?
-- How should regulators treat battery storage?
+- **Singapore, 2019 to 2022.** I led the PV grid integration working group of a national solar forecasting programme for the Energy Market Authority (EMA) and Singapore Power (SP). We modelled Singapore's networks, studied how distributed PV and storage affect capacity adequacy, grid stability, reserve requirements, generation mix, and prices, compared integration measures, and presented the findings to EMA and SP.
+- **Indonesia, since 2023.** Through GIZ, I was one of three main authors, with Energynautics and UMBRA, of two studies for the Ministry of Energy and Mineral Resources (MEMR): a comparative study of ancillary services, which benchmarks reference markets including Singapore, and a regulatory framework and business model for battery energy storage systems (BESS), which compares ownership, contracting (hybrid power purchase agreements, capacity, and tolling agreements), procurement, and pricing. I have also worked with GIZ on rooftop PV hosting capacity and quotas, and trained PT PLN (Persero) staff on ancillary services and demand response.
+
+[More on my experience](/experience/).
+
+## Questions I help answer
+
+- How much PV can this network host before voltage, frequency, or reserves become binding?
+- Which measure (curtailment, inverter reactive power, batteries, or network reinforcement) solves a given problem at least cost?
+- Which ancillary services should PV and batteries provide, and how should they be procured and paid for?
+- How should regulation treat battery storage: who owns it, how it is contracted, and how it is paid?
