@@ -26,6 +26,7 @@ LINKEDIN = "https://www.linkedin.com/in/oktovianogandhi/"
 SCHOLAR = "https://scholar.google.com.sg/citations?user=0H3VhVQAAAAJ&hl=en"
 ORCID = "https://orcid.org/0000-0002-7003-2986"
 HBKU = "https://www.hbku.edu.qa/en/staff/oktoviano-gandhi"
+SCOPUS = "https://www.scopus.com/authid/detail.uri?authorId=57192808691"
 ALVA_URL = "https://alvaenergi.com/"
 TODAY = date.today().isoformat()
 
@@ -77,7 +78,7 @@ PERSON = {
     "award": ["Springer Thesis Award (2020)", "Global Goals List, Vanity Fair and One Young World (2020)", "Gen.T List, Tatler Asia (2021)",
               "Leader of Tomorrow, St. Gallen Symposium (2019)", "BP Advancing Energy Scholar, One Young World (2019)"],
     "memberOf": [{"@type": "Organization", "name": "IEEE"}, {"@type": "Organization", "name": "Asosiasi Energi Surya Indonesia (AESI)"}],
-    "sameAs": [LINKEDIN, SCHOLAR, ORCID, HBKU],
+    "sameAs": [LINKEDIN, SCHOLAR, ORCID, SCOPUS, HBKU],
 }
 ALVA = {"@type": "Organization", "@id": SITE + "/#alva-energi", "name": "Alva Energi", "legalName": "PT Alva Energi Lestari",
         "url": ALVA_URL, "foundingDate": "2017", "founder": {"@id": PERSON_ID}, "areaServed": "Indonesia"}
@@ -550,7 +551,7 @@ def llms_txt(pages):
     for tag, slug, _ in TOPICS:
         m = pages["expertise/" + slug][0]
         lines.append(f"- [{m['title']}]({SITE}/expertise/{slug}/): {m['summary']}")
-    lines += ["", "## Elsewhere", "", f"- [LinkedIn]({LINKEDIN})", f"- [Google Scholar]({SCHOLAR})", f"- [ORCID]({ORCID})", f"- [Hamad Bin Khalifa University staff profile]({HBKU})", f"- [Alva Energi]({ALVA_URL})", "",
+    lines += ["", "## Elsewhere", "", f"- [LinkedIn]({LINKEDIN})", f"- [Google Scholar]({SCHOLAR})", f"- [ORCID]({ORCID})", f"- [Scopus author profile]({SCOPUS})", f"- [Hamad Bin Khalifa University staff profile]({HBKU})", f"- [Alva Energi]({ALVA_URL})", "",
               "## Optional", "", f"- [Full text of the main pages]({SITE}/llms-full.txt)", "", f"Contact: {EMAIL}", ""]
     return "\n".join(lines)
 
