@@ -12,7 +12,7 @@ import json
 import re
 import shutil
 import sys
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 import markdown
@@ -29,6 +29,8 @@ HBKU = "https://www.hbku.edu.qa/en/staff/oktoviano-gandhi"
 SCOPUS = "https://www.scopus.com/authid/detail.uri?authorId=57192808691"
 ALVA_URL = "https://alvaenergi.com/"
 TODAY = date.today().isoformat()
+# Full ISO 8601 date-time with time zone: Google rejects a bare date in ProfilePage dateModified.
+MODIFIED = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
 sys.path.insert(0, str(ROOT / "data"))
 from publications import JOURNAL, BOOKS, REPORTS, CONFERENCE  # noqa: E402
@@ -386,7 +388,7 @@ def build():
     home_ld = {"@context": "https://schema.org", "@graph": [
         person, ALVA,
         {"@type": "WebSite", "@id": SITE + "/#website", "url": SITE + "/", "name": NAME, "publisher": {"@id": PERSON_ID}, "inLanguage": "en-GB"},
-        {"@type": "ProfilePage", "@id": SITE + "/#profilepage", "url": SITE + "/", "mainEntity": {"@id": PERSON_ID}, "dateModified": TODAY}]}
+        {"@type": "ProfilePage", "@id": SITE + "/#profilepage", "url": SITE + "/", "mainEntity": {"@id": PERSON_ID}, "dateModified": MODIFIED}]}
     home_desc = ("Dr Oktoviano (Okto) Gandhi works on solar PV, floating PV, battery storage, grid integration, and techno-economics, "
                  "mostly in Southeast Asia. Scientist at QEERI, Hamad Bin Khalifa University; previously eleven years at SERIS, National University of Singapore.")
     write("/", page("/", "", home_desc, home_body, jsonld=home_ld))
@@ -399,7 +401,7 @@ def build():
 <div class="wrap page-body"><div class="about-grid"><div class="prose">{md(body)}</div>
 {portrait(eager=False)}</div></div>"""
     about_ld = {"@context": "https://schema.org", "@graph": [
-        {"@type": "ProfilePage", "url": SITE + "/about/", "dateModified": TODAY, "mainEntity": person},
+        {"@type": "ProfilePage", "url": SITE + "/about/", "dateModified": MODIFIED, "mainEntity": person},
         crumbs([("Home", "/"), ("About", "/about/")])]}
     write("/about/", page("/about/", "About", meta["description"], about_body, active="/about/", jsonld=about_ld, og_type="profile"))
     urls.append("/about/")
@@ -411,7 +413,7 @@ def build():
 <div class="wrap page-body"><div class="prose experience">{md(body)}</div><h2>Organisations I have worked with</h2>{orgs_section}</div>"""
     exp_ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "WebPage", "url": SITE + "/experience/", "name": f"Experience of {NAME}", "description": meta["description"],
-         "about": {"@id": PERSON_ID}, "dateModified": TODAY},
+         "about": {"@id": PERSON_ID}, "dateModified": MODIFIED},
         crumbs([("Home", "/"), ("Experience", "/experience/")])]}
     write("/experience/", page("/experience/", "Experience", meta["description"], exp_body, active="/experience/", jsonld=exp_ld))
     urls.append("/experience/")
@@ -436,7 +438,7 @@ def build():
 <h2>Other expertise</h2><ul class="plain">{others}</ul></div></div>"""
         ld = {"@context": "https://schema.org", "@graph": [
             {"@type": "WebPage", "url": f"{SITE}/expertise/{slug}/", "name": meta["title"], "description": meta["description"],
-             "author": {"@id": PERSON_ID}, "about": {"@type": "Thing", "name": meta["title"]}, "dateModified": TODAY,
+             "author": {"@id": PERSON_ID}, "about": {"@type": "Thing", "name": meta["title"]}, "dateModified": MODIFIED,
              "mentions": [pub_ld(p, "ScholarlyArticle") for p in related[:12]]},
             crumbs([("Home", "/"), ("Expertise", "/expertise/"), (meta["title"], f"/expertise/{slug}/")])]}
         write(f"/expertise/{slug}/", page(f"/expertise/{slug}/", meta["title"], meta["description"], tbody, active="/expertise/", jsonld=ld))
