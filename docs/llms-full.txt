@@ -1,15 +1,15 @@
 # Oktoviano Gandhi: full text of ogandhi.com
-Source: https://ogandhi.com/ (generated 2026-11-19)
+Source: https://ogandhi.com/ (generated 2026-11-20)
 
 ## About (https://ogandhi.com/about/)
 
-I work on solar PV, battery storage, and their integration into power systems, mostly in Southeast Asia. My work covers feasibility studies, grid integration and ancillary services, power sector regulation and tariffs, and training for utilities and regulators.
+I work on solar photovoltaics (PV), battery storage, and their integration into power systems, mostly in Southeast Asia. My work covers feasibility studies, grid integration and ancillary services, power sector regulation and tariffs, and training for utilities and regulators.
 
 I am a Scientist at the Qatar Environment and Energy Research Institute (QEERI), Hamad Bin Khalifa University, in Doha, where I am a principal investigator for projects on resilient PV systems for arid environments and on grid technologies.
 
 Before that, I spent eleven years at the Solar Energy Research Institute of Singapore (SERIS), National University of Singapore (NUS). There I worked on feasibility studies for more than 7 GWp of PV and 1 GWh of battery storage, led the PV grid integration working group of a solar forecasting programme for the Energy Market Authority and Singapore Power, and maintained the SERIS Global Floating PV Database (about 1,700 projects in 66 countries).
 
-In Indonesia, I have worked with GIZ and the Ministry of Energy and Mineral Resources on ancillary services, the regulatory framework for battery storage, rooftop PV hosting capacity, and PV and battery tariffs, and with PT PLN (Persero) on ancillary services, demand response, and renewable energy forecasting. Other studies were funded by ADB, the World Bank, the Inter-American Development Bank, and USAID, in countries including the Philippines, Viet Nam, Sri Lanka, Mexico, Tuvalu, and Suriname. I also co-founded Alva Energi, which has installed more than 800 kWp of solar PV across 18 cities and regencies in Indonesia.
+In Indonesia, I have worked with the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) and the Ministry of Energy and Mineral Resources on ancillary services, the regulatory framework for battery storage, rooftop PV hosting capacity, and PV and battery tariffs, and with the state electricity company, PT PLN (Persero), on ancillary services, demand response, and renewable energy forecasting. Other studies were funded by the Asian Development Bank (ADB), the World Bank, the Inter-American Development Bank (IDB), and the United States Agency for International Development (USAID), in countries including the Philippines, Viet Nam, Sri Lanka, Mexico, Tuvalu, and Suriname. I also co-founded Alva Energi, which helps homes, businesses, and industry in Indonesia cut their electricity costs and carbon footprint with solar PV, brings off-grid PV to remote villages, and advises companies and institutions on decarbonisation.
 
 I am Indonesian, lived in Singapore for most of the past twenty years, and work in English, Indonesian, and Malay.
 
@@ -22,16 +22,15 @@ I am Indonesian, lived in Singapore for most of the past twenty years, and work 
 
 More than 50 peer-reviewed publications and two books with Springer Nature, with more than 3,000 citations and an h-index of 27 on Google Scholar (October 2026). I have published in journals including Nature Reviews Clean Technology, Joule, Energy & Environmental Science, and Renewable and Sustainable Energy Reviews, and I review for journals including Applied Energy, IEEE Transactions on Power Systems, IEEE Transactions on Smart Grid, IEEE Transactions on Sustainable Energy, and Solar Energy.
 
-## Memberships
+## Memberships and roles
 
 - Contributor to the International Energy Agency Photovoltaic Power Systems Programme (IEA PVPS) Task 13, Reliability and Performance of Photovoltaic Systems, since 2022.
+- Senior Policy Fellow, Renewable Energy Systems and Energy Transition Strategy, Solar Futures Alliance, an international non-profit think tank on solar-led development in the Global South (honorary and advisory).
 - Institute of Electrical and Electronics Engineers (IEEE).
-- Indonesian Solar Energy Association (Asosiasi Energi Surya Indonesia, AESI).
 
 ## Recognition
 
 Coverage and links are on the media page.
-
 
 - Springer Thesis Award, for my PhD thesis (2020).
 - Best Paper Award, IEEE WIECON-ECE 2020, with co-authors.
@@ -45,17 +44,17 @@ Views on this site are my own and do not represent those of my employer.
 
 ## Experience (https://ogandhi.com/experience/)
 
-I have worked across the project cycle: global screening and market data, pre-feasibility and feasibility studies, regulation and tariffs, installation, and training for the people who will operate the systems. Most of this work has been in Southeast Asia, with feasibility studies in South Asia, the Pacific, and Latin America.
+I have worked across the project cycle of solar photovoltaic (PV) and battery storage projects: global screening and market data, pre-feasibility and feasibility studies, regulation and tariffs, installation, and training for the people who will operate the systems. Most of this work has been in Southeast Asia, with feasibility studies in South Asia, the Pacific, and Latin America.
 
 ## Feasibility and options studies
 
-- Floating PV for development banks, 2021 to 2026. Floating PV expert on teams led by Dornier Suntrace and Trama TecnoAmbiental:
-    - Philippines: floating solar project technical support under ADB's TA-9292, Strengthening Project Preparation Capacity in Asia and the Pacific (ADB, 2021 to 2022);
-    - Suriname: feasibility studies of floating solar PV (IDB, 2022 to 2023);
-    - Sri Lanka: feasibility studies and environmental and social impact assessment of 30 to 50 MWp floating solar power plants (USAID, 2022 to 2023);
+- Floating PV for development banks, 2021 to 2026. Floating PV expert on teams led by Dornier Suntrace and Trama TecnoAmbiental (TTA):
+    - Philippines: floating solar project technical support under the Asian Development Bank's (ADB) TA-9292, Strengthening Project Preparation Capacity in Asia and the Pacific (ADB, 2021 to 2022);
+    - Suriname: feasibility studies of floating solar PV (Inter-American Development Bank (IDB), 2022 to 2023);
+    - Sri Lanka: feasibility studies and environmental and social impact assessment of 30 to 50 MWp floating solar power plants (United States Agency for International Development (USAID), 2022 to 2023);
     - Mexico: options study for floating PV facilities (World Bank, 2024);
     - Tuvalu: feasibility study of lagoon floating PV (World Bank, 2024);
-    - Viet Nam: exploring renewable energy hybrid facilities, including floating PV with hydropower (World Bank, from 2025).
+    - Viet Nam: exploring renewable energy hybrid facilities, including floating PV with hydropower (World Bank, 2025 to 2026).
 
     The work covered technology selection, energy yield assessment, layout and preliminary engineering design, economic viability, grid interconnection and permitting, and implementation and ownership models.
 
@@ -64,9 +63,11 @@ I have worked across the project cycle: global screening and market data, pre-fe
 
 ## Power sector regulation, planning, and advisory
 
-- GIZ Energy Programme Indonesia, since December 2023. Expert on the Renewable Energy for Electrification Programme (REEP2), Clean, Affordable and Secure Energy for Southeast Asia (CASE), and Green Energy projects, advising Indonesia's Ministry of Energy and Mineral Resources (MEMR) and PT PLN (Persero) through GIZ:
+- GIZ Energy Programme Indonesia, since December 2023. Expert on the Renewable Energy for Electrification Programme (REEP2), Clean, Affordable and Secure Energy for Southeast Asia (CASE), and Green Energy projects of the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ), advising Indonesia's Ministry of Energy and Mineral Resources (MEMR) and the state electricity company, PT PLN (Persero), through GIZ:
     - one of three main authors, with Energynautics and UMBRA, of a comparative study of ancillary services for Indonesia, with workshops for MEMR, Bappenas, and PLN;
-    - one of three main authors of a regulatory framework and business model for battery energy storage systems, including the PPA price analysis for PV and wind with storage;
+    - one of three main authors of a regulatory framework and business model for battery energy storage systems (BESS), including the power purchase agreement (PPA) price analysis for PV and wind with storage;
+    - a financial model for MEMR to test draft benchmark prices for utility-scale PV, PV with battery storage, and stand-alone battery storage, reporting the levelised cost of electricity (LCOE), project and equity returns, and debt service coverage under different financing terms;
+    - for a carbon finance programme, estimates of the LCOE of floating PV at candidate reservoir sites and of the carbon price needed to close the gap to Indonesia's ceiling tariff;
     - advice on rooftop PV hosting capacity and quotas, battery storage, floating PV, demand response, variable renewable energy forecasting, and power system expansion planning;
     - quality assurance of outputs by national and international consultants.
 - Singapore's Energy Market Authority (EMA) and Singapore Power (SP), 2019 to 2022. Leader of the PV grid integration working group in a national solar forecasting programme: network modelling; the effect of distributed PV and storage on adequacy, stability, reserves, generation mix, and prices; a comparison of integration measures; and the value of solar forecasts. Findings presented to EMA and SP.
@@ -74,27 +75,27 @@ I have worked across the project cycle: global screening and market data, pre-fe
 
 ## Island and off-grid systems
 
-- Diesel replacement on an industrial island grid, Riau Islands, Indonesia, 2015 to 2018. Researcher for NRF Singapore and an industrial client: site visits, load measurements, a control and energy management framework for a 24 MVA isolated network, and a roadmap for PV siting, battery sizing, and phased diesel replacement, tested with hardware in the loop with the client's engineers.
+- Diesel replacement on an industrial island grid, Riau Islands, Indonesia, 2015 to 2018. Researcher for NRF Singapore and an industrial client: site visits, load measurements, a control and energy management framework for a 24 MVA isolated network, and a roadmap for PV siting, battery sizing, and phased diesel replacement, tested with hardware in the loop.
 - Rural electrification, Sumba, East Nusa Tenggara, 2018 to 2019. Through Alva Energi, with a student community programme: two communal off-grid PV systems serving 42 households in the village of Homba Karipit. I helped design the systems, procure the equipment, install them, and train the local operator.
 - Energy roadmap and off-grid PV, North Sumatra, 2018 to 2020. Project manager for an orangutan sanctuary: energy needs analysis, an energy roadmap, and the planning and installation of grid-connected and off-grid PV.
 
 ## Training and capacity building
 
-- PT PLN (Persero), MEMR, and Bappenas, through GIZ, since 2023. Curricula, training materials, and delivery on power system expansion planning with variable renewable energy (including a training of trainers with PLN Academy), ancillary services, battery storage, demand response, pumped storage hydropower, PV power plants, variable renewable energy forecasting, and long-term electricity planning.
+- PT PLN (Persero), MEMR, and Bappenas, since 2023. Mostly through GIZ, and also directly for PLN's training centre (PLN Pusdiklat), including a course on optimising ancillary services for renewable grid integration (2025). Curricula, training materials, and delivery on power system expansion planning with variable renewable energy (including a training of trainers with PLN Academy), ancillary services, battery storage, demand response, pumped storage hydropower, PV power plants, variable renewable energy forecasting, and long-term electricity planning.
 - Off-grid PV in Eastern Indonesia, 2022 to 2023. Team leader for Pattimura University in Ambon, funded by New Zealand's NZMATES programme: training needs assessment, curricula for a mini-grid laboratory and a university PV course, training of six trainers, and a roadmap for a solar training centre.
 - National University of Singapore, 2015 to 2021. Undergraduate and graduate teaching on renewable energy, physics, and power systems, and project supervision.
 
 ## Company
 
-- Alva Energi, Indonesia, since 2017. Co-founder of a solar PV engineering, procurement, and construction (EPC) and consultancy company. Alva Energi has installed more than 800 kWp of solar PV across 18 cities and regencies in Indonesia, for homes, businesses, industry, and villages, including EPC contracts with two years of operation and maintenance. My work there covers project management and supervision, design and budget review, training of engineers, licensing and net metering with PLN, and business models and financing with banks and developers.
+- Alva Energi, Indonesia, since 2017. Co-founder of a solar PV engineering, procurement, and construction (EPC) and consultancy company. Alva Energi helps homes, businesses, and industry in Indonesia cut their electricity costs and carbon footprint with rooftop PV, brings off-grid PV to remote villages, and advises companies and institutions on decarbonisation, including the pipeline network study above. My work there covers project management and supervision, design and budget review, training of engineers, licensing and net metering with PLN, and business models and financing with banks and developers.
 
 ## Research positions
 
 - Qatar Environment and Energy Research Institute (QEERI), Hamad Bin Khalifa University, Doha, since August 2026. Scientist, and principal investigator for projects on resilient PV systems for arid environments and on grid technologies.
-- Solar Energy Research Institute of Singapore (SERIS), National University of Singapore, 2015 to 2026. Research Scholar, then Research Fellow (2019) and Senior Research Fellow (2024). Owner of the SERIS Global Floating PV Database (2022 to 2026) and contributor to IEA PVPS Task 13 since 2022.
+- Solar Energy Research Institute of Singapore (SERIS), National University of Singapore, 2015 to 2026. Research Scholar, then Research Fellow (2019) and Senior Research Fellow (2024). Owner of the SERIS Global Floating PV Database (2022 to 2026) and contributor to the International Energy Agency Photovoltaic Power Systems Programme (IEA PVPS) Task 13 since 2022.
 - Earlier. Visiting researcher at Tsinghua University, Beijing (2018), and energy policy intern at the Institute of Energy and Environment, University of São Paulo (2014 to 2015).
 
-## Floating PV (https://ogandhi.com/expertise/floating-pv/)
+## Floating solar PV (https://ogandhi.com/expertise/floating-pv/)
 
 Where floating PV makes sense, what it costs compared with ground-mounted PV, and how to take a reservoir, lagoon, or coastal site from screening to feasibility.
 
@@ -102,16 +103,17 @@ Floating photovoltaics (floating PV) places solar modules on reservoirs, lakes, 
 
 ## What I have worked on
 
-- Global market data. From 2022 to 2026 I maintained the SERIS Global Floating PV Database at the Solar Energy Research Institute of Singapore (SERIS): about 1,700 projects, over 10 GWp, in 66 countries. It records capacity, cost, float supplier, water body type, and coverage ratio, and it underpins the work below.
+- Global market data. At the Solar Energy Research Institute of Singapore (SERIS), I maintained the SERIS Global Floating PV Database from 2022 to 2026: about 1,700 projects, over 10 GWp, in 66 countries. It records capacity, cost, float supplier, water body type, and coverage ratio, among other parameters, and it underpins the work below.
 - Design, cost, and risks. With colleagues, I reviewed how floating PV systems are designed, built, and operated. Installed capacity passed 9.6 GWp in 2024, and median capital expenditure fell to USD 1.25/Wp. Levelised cost of electricity (LCOE) generally remains higher than for land-based PV, but water conservation, synergies with hydropower and aquaculture, and less land-use conflict add value. The main open issues are operations and maintenance in harsher conditions, environmental impacts, and regulatory uncertainty for developers.
-- How much could be built on inland water. Covering 10% of the area of 249,717 inland reservoirs could host up to 22 TWp, enough to meet global electricity consumption and up to 5% of the world's water demand through avoided evaporation. Trackers raised the specific yield of a typical 10° fixed-tilt system by up to 50% within ±40° latitude, while bifacial modules added up to 4.5%.
+- How much could be built on inland water. Covering 10% of the area of 249,717 inland reservoirs could host up to 22 TWp, enough to meet global electricity consumption and up to 5% of the world's water demand through avoided evaporation. Trackers could raise the specific yield of a typical 10° fixed-tilt system by up to 50% within ±40° latitude, and bifacial modules could add up to 4.5%.
 - Offshore floating PV. A global assessment of territorial waters and exclusive economic zones found that up to 95% of the offshore regions analysed fall within conditions suitable for current floating PV technology. In 84% of regions, less than 2% of the available offshore area would meet current electricity demand, and in 53% of regions that area comes at an LCOE below 15 US cents/kWh. Southeast Asia, particularly Indonesia and Malaysia, emerged as an early deployment zone, owing to its irradiance, bathymetry, and competitive LCOE.
-- Floating PV with hydropower. Of about 70 hydropower plants in Ecuador, 11 had favourable conditions for large-scale floating PV. Floating PV adds generation and reduces evaporation from the reservoir, which helps keep hydropower output up in dry seasons, when irradiance is typically higher.
-- Yield, reliability, and maintenance. I contribute to the International Energy Agency Photovoltaic Power Systems Programme (IEA PVPS) Task 13, including its 2025 review of floating PV energy yield, reliability, and maintenance.
+- Floating PV with hydropower. Of about 70 hydropower plants in Ecuador, 11 had favourable conditions for large-scale floating PV. Floating PV can add generation and reduce evaporation from the reservoir, which can help keep hydropower output up in dry seasons, when irradiance is typically higher.
+- Carbon finance. For a carbon finance programme in Indonesia, through the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ), I estimated the LCOE of floating PV at candidate reservoir sites and the carbon price needed to close the gap between that cost and Indonesia's ceiling tariff for solar power.
+- Yield, reliability, and maintenance. As a contributor to the International Energy Agency Photovoltaic Power Systems Programme (IEA PVPS) Task 13, I worked on its 2025 review of floating PV energy yield, reliability, and maintenance. Yield models for floating PV still lack reliable data on module temperature, wave-induced losses, soiling (including bird droppings), and long-term performance loss, and weather databases often leave out coastal and offshore sites. Cables, connectors, and junction boxes may be more critical than the modules, because they may face more stress on water than on land. Field data on failures remain scarce, and there is no accelerated stress test designed for floating PV yet. Maintenance often needs divers or marine engineers, so remote monitoring, drone inspection, and automation could reduce its cost.
 
 ## Where I have applied it
 
-As the floating PV expert on teams led by Dornier Suntrace and Trama TecnoAmbiental, I worked on pre-feasibility, feasibility, and options studies funded by the Asian Development Bank (ADB) in the Philippines, the Inter-American Development Bank (IDB) in Suriname, USAID in Sri Lanka (30 to 50 MWp), and the World Bank in Mexico, Tuvalu (a lagoon site), and Viet Nam (floating PV with hydropower). The work covered technology selection, energy yield assessment, layout and preliminary engineering design, economic viability, grid interconnection and permitting, and implementation and ownership models. More on my experience.
+As the floating PV expert on teams led by Dornier Suntrace and Trama TecnoAmbiental, I worked on pre-feasibility, feasibility, and options studies funded by the Asian Development Bank (ADB) in the Philippines, the Inter-American Development Bank (IDB) in Suriname, the United States Agency for International Development (USAID) in Sri Lanka (30 to 50 MWp), and the World Bank in Mexico, Tuvalu (a lagoon site), and Viet Nam (floating PV with hydropower). The work covered technology selection, energy yield assessment, layout and preliminary engineering design, economic viability, grid interconnection and permitting, and implementation and ownership models. More on my experience.
 
 ## Questions I help answer
 
@@ -119,25 +121,26 @@ As the floating PV expert on teams led by Dornier Suntrace and Trama TecnoAmbien
 - How does the cost of floating PV compare with ground-mounted PV at this site, and what drives the difference?
 - What changes in design, energy yield, and maintenance when PV sits on water?
 - How can floating PV be combined with an existing hydropower plant?
+- What carbon price or concessional finance would make a floating PV project viable under a tariff ceiling?
 - Under what conditions could offshore floating PV compete in a given market?
 
 ## Grid integration, ancillary services, and regulation (https://ogandhi.com/expertise/grid-integration/)
 
 How much solar PV and battery storage a power system can take, which integration measures cost least, and how regulation and markets can make them happen.
 
-As the share of solar PV grows, system operators have to manage voltage, frequency, reserves, and forecast errors in new ways, and regulators have to decide who provides these services and who pays for them. My work connects the engineering to the economics and the rules: what limits PV in a given network, which measures address it, what each one costs, and how the regulatory framework can put them in place.
+As the share of solar photovoltaics (PV) grows, system operators have to manage voltage, frequency, reserves, and forecast errors in new ways, and regulators have to decide who provides these services and who pays for them. My work connects the engineering to the economics and the rules: what limits PV in a given network, which measures address it, what each one costs, and how the regulatory framework can put them in place.
 
 ## What I have worked on
 
 - What limits PV, and what can be done about it. A two-part review of how high PV penetration affects voltage, frequency, protection, harmonics, rotor angle stability, and flexibility requirements, with the penetration limits reported in the literature and the tools needed to check them. The second part assesses the solutions (forecasting, voltage and frequency regulation, harmonic compensation, reactive power management, generator planning and dispatch, and adaptive protection), what limits their implementation, and who bears their cost. They are my most cited papers.
-- The cost of integrating PV. I proposed a levelised cost of PV integration: the capital and operating cost of an integration measure divided by the PV energy generated over its lifetime. On 69-bus and 119-bus distribution networks with real weather and price data, combined active and reactive power control was the most cost-effective way to mitigate overvoltage, followed closely by reactive power control and curtailment. Battery storage would need to become more than 80% cheaper to be viable for overvoltage mitigation alone.
-- Reactive power from PV inverters. My PhD at the National University of Singapore (NUS) priced the reactive power that PV inverters can supply to the grid, including the cost of the extra wear on the inverter. Lifetime reduction made up more than half of that cost at low PV penetration, and less at high penetration, when the support is spread over more systems. The work identified the range of incentives that would make the service worthwhile for PV owners, and local control methods that perform almost as well as centralised optimisation without any communication between inverters.
-- Behind-the-meter storage that operators cannot see. Batteries that are netted out with customer load and not dispatched by the operator increased ramping requirements, made net demand and prices more volatile, and raised system operating cost on a standard test system. Operators should assess this effect in their own networks before such storage becomes widespread.
+- The cost of integrating PV. I proposed a levelised cost of PV integration: the capital and operating cost of an integration measure divided by the PV energy generated over its lifetime. In modelled distribution networks with real weather and price data, combined active and reactive power control was the most cost-effective way to mitigate overvoltage, followed closely by reactive power control and curtailment. Battery storage would need to become more than 80% cheaper to be viable for overvoltage mitigation alone.
+- Reactive power from PV inverters. My PhD at the National University of Singapore (NUS) priced the reactive power that PV inverters can supply to the grid, including the cost of the extra wear on the inverter. Lifetime reduction made up more than half of that cost at low PV penetration, and less at high penetration, when the support is spread over more systems. The work identified the range of incentives that would make the service worthwhile for PV owners, and local control methods that can perform almost as well as centralised optimisation without any communication between inverters.
+- Behind-the-meter storage that operators cannot see. In simulations on a standard test system, batteries that are netted out with customer load and not dispatched by the operator could increase ramping requirements, make net demand and prices more volatile, and raise system operating cost. Operators should assess this effect in their own networks before such storage becomes widespread.
 
 ## Where I have applied it
 
 - Singapore, 2019 to 2022. I led the PV grid integration working group of a national solar forecasting programme for the Energy Market Authority (EMA) and Singapore Power (SP). We modelled Singapore's networks, studied how distributed PV and storage affect capacity adequacy, grid stability, reserve requirements, generation mix, and prices, compared integration measures, and presented the findings to EMA and SP.
-- Indonesia, since 2023. Through GIZ, I was one of three main authors, with Energynautics and UMBRA, of two studies for the Ministry of Energy and Mineral Resources (MEMR): a comparative study of ancillary services, which benchmarks reference markets including Singapore, and a regulatory framework and business model for battery energy storage systems (BESS), which compares ownership, contracting (hybrid power purchase agreements, capacity, and tolling agreements), procurement, and pricing. I have also worked with GIZ on rooftop PV hosting capacity and quotas, and trained PT PLN (Persero) staff on ancillary services and demand response.
+- Indonesia, since 2023. Through the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ), I was one of three main authors, with Energynautics and UMBRA, of two studies for the Ministry of Energy and Mineral Resources (MEMR): a comparative study of ancillary services, which benchmarks reference markets including Singapore, and a regulatory framework and business model for battery energy storage systems (BESS), which compares ownership, contracting (hybrid power purchase agreements, capacity, and tolling agreements), procurement, and pricing. I have also worked with GIZ on rooftop PV hosting capacity and quotas, and trained staff of the state electricity company, PT PLN (Persero), on ancillary services and demand response.
 
 More on my experience.
 
@@ -156,14 +159,14 @@ Solar forecasts keep improving, but accuracy alone does not tell a system operat
 
 ## What I have worked on
 
-- The value of forecasts and the cost of their errors. A review of what solar forecasts are worth across applications: bidding in electricity markets, power system operations, and household electricity bills. Most published analyses look at the transmission level, from either the market or the system operations side. Compared with the levelised cost of electricity of PV, the value of forecasts and the cost of their errors are considerable. The review sets out measures to reduce and adapt to solar uncertainty and variability, which system operators, market operators, and regulators can select according to their own circumstances.
-- Forecasts that state their uncertainty. With colleagues at NUS, I worked on probabilistic forecasting, which gives a range with probabilities rather than a single value. The methods improved the reliability of one-hour-ahead probabilistic PV forecasts, and deeper neural networks with skip connections produced more accurate probabilistic load forecasts than earlier methods.
+- The value of forecasts and the cost of their errors. A review of what solar forecasts are worth across applications: bidding in electricity markets, power system operations, and household electricity bills. Most published analyses look at the transmission level, from either the market or the system operations side. Compared with the levelised cost of electricity of solar photovoltaics (PV), the value of forecasts and the cost of their errors are considerable. The review sets out measures to reduce and adapt to solar uncertainty and variability, which system operators, market operators, and regulators can select according to their own circumstances.
+- Forecasts that state their uncertainty. With colleagues at the National University of Singapore (NUS), I worked on probabilistic forecasting, which gives a range with probabilities rather than a single value. The methods improved the reliability of one-hour-ahead probabilistic PV forecasts, and deeper neural networks with skip connections produced more accurate probabilistic load forecasts than earlier methods.
 - Satellite data in place of ground measurements. Reliable ground measurements of irradiance are scarce and costly. Using 15 research-grade stations in Europe, South America, and Africa, forecasts built on bias-corrected satellite-derived irradiance were of comparable quality to those built on ground measurements.
-- Using forecasts in operation. A dispatch strategy that uses load and irradiance forecasts for PV, battery, and diesel systems cut operating cost by 5% against two common benchmark strategies, while keeping frequency, voltage, and harmonics within limits on a real-time simulator.
+- Using forecasts in operation. A dispatch strategy that uses load and irradiance forecasts for PV, battery, and diesel systems could cut operating cost by 5% against two common benchmark strategies, while keeping frequency, voltage, and harmonics within limits in tests on a real-time simulator.
 
 ## Where I have applied it
 
-From 2019 to 2022 I led the PV grid integration working group of Singapore's national solar forecasting programme for the Energy Market Authority (EMA) and Singapore Power (SP), which included analysing the value of forecasts and the cost of forecast errors. In Indonesia, I have trained PT PLN (Persero) staff on variable renewable energy forecasting through GIZ. More on my experience.
+From 2019 to 2022 I led the PV grid integration working group of Singapore's national solar forecasting programme for the Energy Market Authority (EMA) and Singapore Power (SP), which included analysing the value of forecasts and the cost of forecast errors. In Indonesia, I have trained staff of the state electricity company, PT PLN (Persero), on variable renewable energy forecasting, through the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ). More on my experience.
 
 ## Questions I help answer
 
@@ -176,17 +179,17 @@ From 2019 to 2022 I led the PV grid integration working group of Singapore's nat
 
 Which modules, mounting structures, and trackers give the lowest cost of electricity at a given site, and how climate, albedo, and dust change the answer.
 
-Module datasheets are rated at standard test conditions that rarely occur in the field. Temperature, spectrum, ground reflectance (albedo), and dust all change how much energy a system produces, so the cheapest technology on paper is not always the best choice for a site. My work compares technologies on their energy yield and cost of electricity at real locations.
+Solar photovoltaic (PV) module datasheets are rated at standard test conditions that rarely occur in the field. Temperature, spectrum, ground reflectance (albedo), and dust all change how much energy a system produces, so the cheapest technology on paper is not always the best choice for a site. My work compares technologies on their energy yield and cost of electricity at real locations.
 
 ## What I have worked on
 
-- Bifacial modules and trackers worldwide. A global analysis of fixed-tilt, single-axis, and dual-axis systems with monofacial and bifacial modules found that bifacial modules on single-axis trackers increase energy yield by 35% on average and give the lowest levelised cost of electricity (LCOE) on 93.1% of the world's land area. Dual-axis trackers produce the most energy, but their cost is still too high for them to be cost-effective. An earlier study of 55 locations showed that whether bifacial modules pay off on fixed structures depends on latitude and albedo: below 40° latitude, they need a minimum albedo of about 0.12 to 0.30, depending on the location.
-- How trackers should track. Following the best orientation rather than the sun gained less than 1.8% in irradiance below 60° latitude, so the extra sensors may be hard to justify at the latitudes of Southeast Asia and the Middle East.
-- Test conditions that match the climate. With colleagues at SERIS, I derived climate-specific reference conditions from long-term weather data at four test sites, in Singapore, Australia, Germany, and China. They differ noticeably from standard test conditions, and the technology that yields the most energy depends on the local climate.
-- Soiling. With colleagues at NUS, I worked on estimating soiling losses from surveillance-camera images using deep learning, including a version that runs on low-cost edge devices at the site. Dust and other deposits can reduce output by up to 50%.
+- Bifacial modules and trackers worldwide. A global modelling study of fixed-tilt, single-axis, and dual-axis systems with monofacial and bifacial modules found that bifacial modules on single-axis trackers would increase energy yield by 35% on average and give the lowest levelised cost of electricity (LCOE) on 93.1% of the world's land area. Dual-axis trackers would produce the most energy, but their cost is still too high for them to be cost-effective. An earlier study of 55 locations showed that whether bifacial modules pay off on fixed structures depends on latitude and albedo: below 40° latitude, they need a minimum albedo of about 0.12 to 0.30, depending on the location.
+- How trackers should track. Following the best orientation rather than the sun would gain less than 1.8% in irradiance below 60° latitude, so the extra sensors may be hard to justify at the latitudes of Southeast Asia and the Middle East.
+- Test conditions that match the climate. With colleagues at the Solar Energy Research Institute of Singapore (SERIS), I derived climate-specific reference conditions from long-term weather data at four test sites, in Singapore, Australia, Germany, and China. They differ noticeably from standard test conditions, and the technology that yields the most energy depends on the local climate.
+- Soiling. With colleagues at the National University of Singapore (NUS), I worked on estimating soiling losses from surveillance-camera images using deep learning, including a version that runs on low-cost edge devices at the site. Dust and other deposits can reduce output by up to 50%.
 - Agrivoltaics in arid climates. A review with colleagues at the Qatar Environment and Energy Research Institute (QEERI) estimated the agrivoltaic potential of cultivated arid and semi-arid land at 139 to 231 TWp; deployment on even 1% of that land could deliver 1.3 to 2.3 TWp.
 - Cell and module design. Optimisation of the metal contact design of solar cells and modules to raise efficiency, reduce silver use, and suit the conditions where the modules will be installed.
-- Performance in desert conditions. At QEERI, I work on PV, battery storage, and grid technologies in desert conditions, and I contributed to the IEA PVPS Task 13 report on optimising PV systems for different climates (2025).
+- Performance in desert conditions. At QEERI, I work on PV, battery storage, and grid technologies in desert conditions, and I contributed to the International Energy Agency Photovoltaic Power Systems Programme (IEA PVPS) Task 13 report on optimising PV systems for different climates (2025).
 
 ## Where I have applied it
 
@@ -199,46 +202,48 @@ Technology selection and energy yield assessment are part of every feasibility s
 - How much energy does soiling cost at this site, and how can it be monitored?
 - Which yield assumptions should a lender accept for a technology with little local track record?
 
-## Techno-economics and feasibility (https://ogandhi.com/expertise/techno-economics/)
+## Feasibility and techno-economics (https://ogandhi.com/expertise/techno-economics/)
 
 Levelised costs, tariffs, and financial returns for PV and battery projects, and the engineering assumptions that drive them.
 
-My techno-economic work connects engineering assumptions (energy yield, degradation, grid constraints, and operating strategy) to the metrics used in investment and policy decisions: the levelised cost of electricity (LCOE), the levelised cost of storage (LCOS), power purchase agreement (PPA) prices, the internal rate of return (IRR), and the debt service coverage ratio (DSCR).
+My techno-economic work on solar photovoltaics (PV) and battery storage connects engineering assumptions (energy yield, degradation, grid constraints, and operating strategy) to the metrics used in investment and policy decisions: the levelised cost of electricity (LCOE), the levelised cost of storage (LCOS), power purchase agreement (PPA) prices, the internal rate of return (IRR), and the debt service coverage ratio (DSCR).
 
 ## What I have worked on
 
 - Feasibility studies. From 2021 to 2026, I worked on pre-feasibility and feasibility studies covering more than 7 GWp of PV and more than 1 GWh of battery storage, for development banks and for private developers and investors in Indonesia, Norway, Pakistan, and Singapore.
-- Prices and tariffs. For Indonesia's Ministry of Energy and Mineral Resources, through GIZ, I prepared the PPA price analysis for PV and wind with battery storage across interest rates, debt tenors, and target returns in the published study on the regulatory framework and business model for battery storage.
+- Prices and tariffs. For Indonesia's Ministry of Energy and Mineral Resources, through the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ), I built a financial model to test draft benchmark prices for utility-scale PV, PV with battery storage, and stand-alone battery storage. It reports the LCOE, project and equity IRR, and DSCR under different tax treatments and export-credit and local-bank debt terms. I also prepared the PPA price analysis for PV and wind with battery storage across interest rates, debt tenors, and target returns in the published study on the regulatory framework and business model for battery storage.
+- Carbon finance. For a carbon finance programme in Indonesia, I estimated the LCOE of floating PV at candidate reservoir sites and the carbon price needed to close the gap to the national ceiling tariff.
 - The cost of integrating PV. I proposed a levelised cost of PV integration, so that curtailment, inverter reactive power, and batteries can be compared on the same basis as the cost of the PV itself. The same reasoning priced the reactive power that PV inverters can provide, including the cost of inverter wear.
-- Lowering the upfront cost of diesel replacement. For an Indonesian island grid, starting with a small investment and reinvesting the diesel savings in more PV and batteries each year reduced the 25-year life-cycle cost by more than a third, with under 4% of that cost needed upfront. This addresses the main barrier for utilities and island operators: the initial investment.
-- Storage for cooling. For PV-powered cooling in the tropics, thermal storage (chilled water and ice) had a lower LCOS than batteries, while batteries raised self-sufficiency more. Thermal storage suited applications that shift more energy, such as hotels and cold stores. Off-grid, adding PV to a diesel baseline cut life-cycle cost by 9% to 10%, and adding batteries by 14% to 17%.
+- Lowering the upfront cost of diesel replacement. For an Indonesian island grid, starting with a small investment and reinvesting the diesel savings in more PV and batteries each year could reduce the 25-year life-cycle cost by more than a third, with under 4% of that cost needed upfront. This addresses the main barrier for utilities and island operators: the initial investment.
+- Storage for cooling. In modelled cases of PV-powered cooling in the tropics, thermal storage (chilled water and ice) had a lower LCOS than batteries, while batteries raised self-sufficiency more. Thermal storage would suit applications that shift more energy, such as hotels and cold stores. Off-grid, adding PV to a diesel baseline could cut life-cycle cost by 9% to 10%, and adding batteries by 14% to 17%.
 - Global cost maps. LCOE maps for bifacial and tracking PV worldwide, and for offshore floating PV across territorial waters and exclusive economic zones.
 - Energy policy. A decomposition of energy intensity in São Paulo state, Brazil (1995 to 2012), separating the effects of economic structure and energy efficiency.
 
 ## Where I have applied it
 
-Feasibility work for ADB, the World Bank, IDB, and USAID; tariff and regulatory work for Indonesia's energy ministry through GIZ; and a decarbonisation pre-feasibility study for a gas transmission company in Indonesia, covering PV, battery storage, and hydrogen electrolysers across more than 1,000 km of pipeline and 20 facilities. More on my experience.
+Feasibility work for the Asian Development Bank (ADB), the World Bank, the Inter-American Development Bank (IDB), and the United States Agency for International Development (USAID); tariff and regulatory work for Indonesia's energy ministry through GIZ; and a decarbonisation pre-feasibility study for a gas transmission company in Indonesia, covering PV, battery storage, and hydrogen electrolysers across more than 1,000 km of pipeline and 20 facilities. More on my experience.
 
 ## Questions I help answer
 
 - What tariff or PPA price makes this PV or PV-plus-storage project bankable, and under which financing terms?
+- Are draft benchmark prices high enough for projects to reach their target returns, and low enough to protect the off-taker?
 - Which configuration gives the lowest LCOE at this site?
 - What will grid integration measures add to the cost of PV, and who should bear it?
 - How can a utility or island operator replace diesel when capital is the constraint?
 
 ## Off-grid, island, and hybrid power systems (https://ogandhi.com/expertise/off-grid-and-islands/)
 
-Moving diesel-powered island and remote grids to solar PV and batteries without losing reliability, and making village electrification last.
+Moving diesel-powered island and remote grids to solar PV and batteries without losing reliability, and keeping village power systems working for years after installation.
 
-Many islands and remote communities in Southeast Asia and the Pacific still rely on diesel generators. Adding solar PV and batteries cuts fuel cost and emissions, but the system still has to keep voltage and frequency within limits, and the investment has to fit the budget of the utility or the community. I have worked on this problem from optimisation models to village installations.
+Many islands and remote communities in Southeast Asia and the Pacific still rely on diesel generators. Adding solar photovoltaics (PV) and batteries cuts fuel cost and emissions, but the system still has to keep voltage and frequency within limits, and the investment has to fit the budget of the utility or the community. I have worked on this problem from optimisation models to village installations.
 
 ## What I have worked on
 
-- An industrial island grid in Indonesia. From 2015 to 2018, I was a researcher on a project to replace diesel generation in a 24 MVA isolated network in the Riau Islands, Indonesia: site visits, load measurements, a control and energy management framework, and a roadmap for PV siting, battery sizing, and phased diesel replacement, tested with hardware in the loop together with the client's engineers. In the published case studies, the diesel-only system could not keep voltage within 0.95 to 1.05 per unit; adding PV alone lowered lifetime cost but caused undervoltage at night; PV with batteries gave the lowest cost and kept voltage within range.
-- Phasing the investment. Starting with a small investment and reinvesting the diesel savings in more PV and batteries each year reduced the 25-year life-cycle cost by more than a third, with under 4% of it needed upfront.
-- Sizing and dispatch tools. Optimisation methods and a software tool for siting and sizing PV, batteries, and diesel generators, and a forecast-based dispatch strategy that cut operating cost by 5% against common benchmarks. In a case study on Isabela Island in the Galápagos, Ecuador, a PV, battery, and diesel system reduced diesel consumption by 71% and total cost by 56% compared with diesel generators alone.
-- Village electrification. In 2017 I co-founded Alva Energi, which has installed communal off-grid PV for villages in Sumba (East Nusa Tenggara) and off-grid PV for an orangutan sanctuary in North Sumatra, among other projects. In Sumba, I helped design the systems, procure the equipment, install them, and train the local operator. With colleagues at NUS, I also co-authored a framework for community microgrids that power income-generating activities as well as households, with a case study on Sumba.
-- What makes remote energy solutions last. With Professor Dipti Srinivasan, I edited a book (Springer, 2020) in which practitioners describe solutions applied in remote tropical communities, their impacts, and how to sustain them.
+- An industrial island grid in Indonesia. From 2015 to 2018, I was a researcher on a project to replace diesel generation in a 24 megavolt-ampere (MVA) isolated network in the Riau Islands, Indonesia: site visits, load measurements, a control and energy management framework, and a roadmap for PV siting, battery sizing, and phased diesel replacement, tested with hardware in the loop. In the modelled case studies, the diesel-only system could not keep voltage within 0.95 to 1.05 per unit; adding PV alone would lower lifetime cost but cause undervoltage at night; PV with batteries would give the lowest cost and keep voltage within range.
+- Phasing the investment. Starting with a small investment and reinvesting the diesel savings in more PV and batteries each year could reduce the 25-year life-cycle cost by more than a third, with under 4% of it needed upfront.
+- Sizing and dispatch tools. Optimisation methods and a software tool for siting and sizing PV, batteries, and diesel generators, and a forecast-based dispatch strategy that could cut operating cost by 5% against common benchmarks. In a case study on Isabela Island in the Galápagos, Ecuador, a PV, battery, and diesel system could reduce diesel consumption by 71% and total cost by 56% compared with diesel generators alone.
+- Village electrification. In 2017 I co-founded Alva Energi, which has installed communal off-grid PV for villages in Sumba (East Nusa Tenggara) and off-grid PV for an orangutan sanctuary in North Sumatra, among other projects. In Sumba, I helped design the systems, procure the equipment, install them, and train the local operator. With colleagues at the National University of Singapore (NUS), I also co-authored a framework for community microgrids that power income-generating activities as well as households, with a case study on Sumba.
+- Keeping remote energy systems working. With Professor Dipti Srinivasan, I edited a book (Springer, 2020) in which practitioners describe solutions applied in remote tropical communities, their impacts, and how to keep them running over the long term.
 
 ## Where I have applied it
 
@@ -256,7 +261,6 @@ Beyond the projects above, I led the off-grid PV capacity building programme in 
 - 2026. AP News: Florida’s stormwater ponds become floating solar farms as costs fall and demand rises https://apnews.com/article/sustainable-energy-floating-solar-florida-ef1138ee8804f96094ab521f7e1d0224
 - 2021. Listrik Indonesia: Menerangi Remote Area Lewat Surya https://listrikindonesia.com/detail/8530/menerangi-remote-area-lewat-surya
 - 2020. ScienceDaily: Double-sided solar panels that follow the sun prove most cost effective https://www.sciencedaily.com/releases/2020/06/200603132543.htm
-- 2020. NUS Graduate School: Featured student: Oktoviano Gandhi https://nusgs.nus.edu.sg/featured-students/oktoviano-gandhi/
 - 2019. Indonesia Mengglobal: Oktoviano Gandhi: Investing in Indonesia’s Solar Energy https://indonesiamengglobal.com/2019/05/oktoviano-gandhi-solar-energy/
 - 2019. St. Gallen Symposium: Interview with a Leader of Tomorrow 2019: Oktoviano Gandhi, Cofounder of Alva Energi https://symposium.org/interview-with-a-leader-of-tomorrow-2019-oktoviano-gandhi-cofounder-of-alva-energi/
 - 2013. Oxford Mail: Walks to be guided by those who know homelessness https://www.oxfordmail.co.uk/news/10310569.walks-guided-know-homelessness/
@@ -265,7 +269,6 @@ Beyond the projects above, I led the off-grid PV capacity building programme in 
 - 2020. NUS Electrical and Computer Engineering: Springer Thesis Award https://cde.nus.edu.sg/ece/news/springer-thesis-award-dr-oktoviano-gandhi/
 - 2020. Vanity Fair and One Young World: A World of Good: the Global Goals List http://web.archive.org/web/20230601160142/https://www.vanityfair.com/london/2020/02/one-young-world-summit-2019
 - 2019. One Young World: 30 young leaders building carbon-neutral futures to attend #OYW2019 via BP Scholarship http://web.archive.org/web/20250619230006/https://www.oneyoungworld.com/news-item/30-young-leaders-building-carbon-neutral-futures-attend-oyw2019-bp-scholarship
-- 2019. St. Gallen Symposium: Leader of Tomorrow
 - 2019. Global Young Scientists Summit, Singapore: Participant
 
 ## Publications
@@ -309,7 +312,7 @@ Beyond the projects above, I led the off-grid PV capacity building programme in 
 - Energynautics GmbH, O Gandhi, UMBRA – Strategic Legal Solutions (main authors) (2026). Comparative Study of Ancillary Service as Recommendation for Ancillary Service Provision for Indonesia. GIZ Energy Programme Indonesia & ASEAN, in cooperation with the Directorate General of Electricity, Ministry of Energy and Mineral Resources (PDF). https://ebtke.esdm.go.id/api/storage/2026/elibrary/file/1TI4PtSMMD_20102026094729.pdf
 - Energynautics GmbH, O Gandhi, UMBRA – Strategic Legal Solutions (main authors) (2026). BESS Regulatory Framework and Business Model. GIZ Energy Programme Indonesia & ASEAN, in cooperation with the Directorate General of New, Renewable Energy and Energy Conservation, Ministry of Energy and Mineral Resources (PDF). https://ebtke.esdm.go.id/api/storage/2026/elibrary/file/PlnrYDGmMW_20102026094952.pdf
 - G Friesen, L Micheli, G Eder, T Müller, et al. (O Gandhi, contributing author) (2025). Optimisation of Photovoltaic Systems for Different Climates. IEA PVPS Task 13, Report IEA-PVPS T13-32:2025. https://doi.org/10.69766/QSYC8858
-- J Selj, S Wieland, I Tsanakas, et al. (O Gandhi, contributing author) (2025). Floating Photovoltaic Power Plants: A Review of Energy Yield, Reliability, and Maintenance. IEA PVPS Task 13, Report IEA-PVPS T13-31:2025. https://iea-pvps.org/key-topics/t13-floating-pv-plants-review-2025/
+- J Selj, S Wieland, I Tsanakas, et al. (O Gandhi, contributing author) (2025). Floating Photovoltaic Power Plants: A Review of Energy Yield, Reliability, and Maintenance. IEA PVPS Task 13, Report IEA-PVPS T13-31:2025. https://doi.org/10.69766/KDYA8846
 - C Rodríguez, O Gandhi, H Sun (2025). Global floating PV potential in inland reservoirs: a comparison of different technologies. PV Tech Power, May 2025. https://www.pv-tech.org/global-floating-pv-potential-inland-reservoirs-comparison-different-technologies
 - CD Rodríguez-Gallegos, H Liu, O Gandhi, JP Singh, V Krishnamurthy, et al. (2021). Techno-economic performance modelling of bifacial and tracking PV systems worldwide. IEEE 48th Photovoltaic Specialists Conference (PVSC). https://doi.org/10.1109/PVSC43889.2021.9518852
 - R Chandra, J Saha, SJ Yen, SK Panda, O Gandhi, C Luerssen (2020). Electrifying lives with community empowerment. IECON 2020, 46th Annual Conference of the IEEE Industrial Electronics Society. https://doi.org/10.1109/IECON43393.2020.9254864
