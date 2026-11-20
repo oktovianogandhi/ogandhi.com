@@ -151,7 +151,7 @@ REPORTS = [
     dict(year=2025, authors="J Selj, S Wieland, I Tsanakas, et al. (O Gandhi, contributing author)",
          title="Floating Photovoltaic Power Plants: A Review of Energy Yield, Reliability, and Maintenance",
          venue="IEA PVPS Task 13, Report IEA-PVPS T13-31:2025",
-         url="https://iea-pvps.org/key-topics/t13-floating-pv-plants-review-2025/", tags=["fpv", "perf"]),
+         doi="10.69766/KDYA8846", tags=["fpv", "perf"]),
     dict(year=2025, authors="C Rodríguez, O Gandhi, H Sun",
          title="Global floating PV potential in inland reservoirs: a comparison of different technologies",
          venue="PV Tech Power, May 2025",

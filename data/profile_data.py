@@ -13,7 +13,7 @@ STANDING = ("I am a Scientist at the Qatar Environment and Energy Research Insti
 
 # Selected work: (title, who and when, text, link)
 HIGHLIGHTS = [
-    ("Floating PV feasibility studies", "ADB, World Bank, IDB, and USAID · 2021 to 2026",
+    ("Floating solar PV feasibility studies", "ADB, World Bank, IDB, and USAID · 2021 to 2026",
      "Floating PV expert on studies in the Philippines, Suriname, Sri Lanka, Mexico, Tuvalu, and Viet Nam.",
      "/expertise/floating-pv/"),
     ("Ancillary services and battery storage regulation, Indonesia", "GIZ, with the Ministry of Energy and Mineral Resources · 2024 to 2026",
@@ -30,7 +30,7 @@ HIGHLIGHTS = [
 # Organisations I have worked with (past and current work: funders, clients, counterparts, and lead firms).
 ORGS = [
     ("Development partners", ["Asian Development Bank (ADB)", "World Bank", "Inter-American Development Bank (IDB)", "USAID", "GIZ", "NZMATES (New Zealand)"]),
-    ("Governments and utilities", ["Ministry of Energy and Mineral Resources, Indonesia*", "PT PLN (Persero)*", "Bappenas*", "Energy Market Authority, Singapore", "Singapore Power", "National Research Foundation Singapore"]),
+    ("Governments and utilities", ["Ministry of Energy and Mineral Resources, Indonesia", "PT PLN (Persero)", "Bappenas", "Energy Market Authority, Singapore", "Singapore Power", "National Research Foundation Singapore"]),
     ("Consultancies and research programmes", ["Dornier Suntrace", "Energynautics", "Trama TecnoAmbiental", "UMBRA – Strategic Legal Solutions", "IEA PVPS Task 13"]),
 ]
-ORGS_NOTE = "* Through GIZ."
+ORGS_NOTE = ""  # No footnote: most of this work, like the development-bank studies, came through a lead firm or agency (Okto, 20 November 2026).

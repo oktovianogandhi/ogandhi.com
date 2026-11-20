@@ -1,7 +1,8 @@
 # Media coverage, recognition, and talks for ogandhi.com, newest first.
 # Fields: date (YYYY-MM or YYYY-MM-DD), outlet, title, url (leave "" if no working link), note (one sentence, optional),
 # schema (schema.org type for structured data; default NewsArticle).
-# Only link pages that load (checked 18 November 2026); use a Wayback Machine copy when the original is gone.
+# Only link pages that load (checked 18 and 20 November 2026); use a Wayback Machine copy when the original is gone.
+# The media page lists NEWS and RECOGNITION together, newest first (Okto, 20 November 2026); the home page shows the latest NEWS.
 # Only repeat figures that are published (not SERIS database figures quoted in an article).
 # Sources: the archived "In the Media" page of the old WordPress site (2021 to 2024) and a web search, November 2026.
 
@@ -15,12 +16,11 @@ NEWS = [
     dict(date="2020-06-03", outlet="ScienceDaily", title="Double-sided solar panels that follow the sun prove most cost effective",
          url="https://www.sciencedaily.com/releases/2020/06/200603132543.htm",
          note="On our global study of bifacial modules and trackers, which was also covered by pv magazine, New Scientist, and Forbes."),
-    dict(date="2020", outlet="NUS Graduate School", title="Featured student: Oktoviano Gandhi",
-         url="https://nusgs.nus.edu.sg/featured-students/oktoviano-gandhi/", note=""),
     dict(date="2019-05", outlet="Indonesia Mengglobal", title="Oktoviano Gandhi: Investing in Indonesia’s Solar Energy",
          url="https://indonesiamengglobal.com/2019/05/oktoviano-gandhi-solar-energy/", note="Interview."),
     dict(date="2019", outlet="St. Gallen Symposium", title="Interview with a Leader of Tomorrow 2019: Oktoviano Gandhi, Cofounder of Alva Energi",
-         url="https://symposium.org/interview-with-a-leader-of-tomorrow-2019-oktoviano-gandhi-cofounder-of-alva-energi/", note=""),
+         url="https://symposium.org/interview-with-a-leader-of-tomorrow-2019-oktoviano-gandhi-cofounder-of-alva-energi/",
+         note="Selected as a Leader of Tomorrow for the 2019 St. Gallen Symposium."),
     dict(date="2013-03-25", outlet="Oxford Mail", title="Walks to be guided by those who know homelessness",
          url="https://www.oxfordmail.co.uk/news/10310569.walks-guided-know-homelessness/",
          note="On StreetView Oxford, the social enterprise I founded with Enactus Oxford."),
@@ -41,7 +41,6 @@ RECOGNITION = [
     dict(date="2019", outlet="One Young World", title="30 young leaders building carbon-neutral futures to attend #OYW2019 via BP Scholarship",
          url="http://web.archive.org/web/20250619230006/https://www.oneyoungworld.com/news-item/30-young-leaders-building-carbon-neutral-futures-attend-oyw2019-bp-scholarship",
          note="BP Advancing Energy Scholar. Archived copy."),
-    dict(date="2019", outlet="St. Gallen Symposium", title="Leader of Tomorrow", url="", note="", schema="WebPage"),
     dict(date="2019", outlet="Global Young Scientists Summit, Singapore", title="Participant", url="", note="", schema="WebPage"),
 ]
 
