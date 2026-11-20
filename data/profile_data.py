@@ -18,7 +18,7 @@ HIGHLIGHTS = [
      "/expertise/floating-pv/"),
     ("Ancillary services and battery storage regulation, Indonesia", "GIZ, with the Ministry of Energy and Mineral Resources · 2024 to 2026",
      "One of three main authors of the studies on ancillary services and on the regulatory framework and business model for battery storage.",
-     "/expertise/grid-integration/"),
+     "/expertise/battery-storage/"),
     ("PV grid integration in Singapore", "Energy Market Authority and Singapore Power · 2019 to 2022",
      "Led the PV grid integration working group of a national solar forecasting programme.",
      "/expertise/solar-forecasting/"),
