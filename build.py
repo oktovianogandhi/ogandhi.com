@@ -9,6 +9,7 @@ Needs: Python 3.9+ and the 'markdown' package (pip install markdown).
 """
 import html
 import json
+import hashlib
 import re
 import shutil
 import sys
@@ -21,6 +22,7 @@ ROOT = Path(__file__).parent
 DIST = ROOT / "docs"  # GitHub Pages serves main /docs
 SITE = "https://ogandhi.com"
 NAME = "Oktoviano Gandhi"
+DISPLAY_NAME = "Dr Oktoviano Gandhi"  # header, home heading, and page titles (Okto, 20 November 2026)
 EMAIL = "hello@ogandhi.com"  # Cloudflare Email Routing
 LINKEDIN = "https://www.linkedin.com/in/oktovianogandhi/"
 SCHOLAR = "https://scholar.google.com.sg/citations?user=0H3VhVQAAAAJ&hl=en"
@@ -30,6 +32,8 @@ SCOPUS = "https://www.scopus.com/authid/detail.uri?authorId=57192808691"
 ALVA_URL = "https://alvaenergi.com/"
 TODAY = date.today().isoformat()
 # Full ISO 8601 date-time with time zone: Google rejects a bare date in ProfilePage dateModified.
+# Version tag for the stylesheet link, so browsers fetch the new CSS after each change.
+CSS_V = hashlib.md5((ROOT / "static" / "css" / "site.css").read_bytes()).hexdigest()[:8]
 MODIFIED = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
 sys.path.insert(0, str(ROOT / "data"))
@@ -59,8 +63,8 @@ PERSON = {
     "alternateName": ["Okto Gandhi", "Dr Oktoviano Gandhi", "Oktoviano Gandhi, PhD", "O. Gandhi"],
     "url": SITE + "/",
     "image": {"@type": "ImageObject", "url": SITE + "/img/okto-720.jpg", "width": 720, "height": 900},
-    "description": ("Solar PV and power systems specialist working on floating PV, battery storage, grid integration, "
-                    "and techno-economics, mostly in Southeast Asia. Scientist at QEERI, Hamad Bin Khalifa University; "
+    "description": ("Solar PV and power systems specialist working on floating solar PV, battery energy storage (BESS), grid integration and ancillary services, "
+                    "feasibility studies, and techno-economics, mostly in Southeast Asia. Scientist at QEERI, Hamad Bin Khalifa University; "
                     "previously eleven years at SERIS, National University of Singapore; co-founder of Alva Energi."),
     "jobTitle": "Scientist",
     "worksFor": {"@type": "ResearchOrganization", "name": "Qatar Environment and Energy Research Institute (QEERI)",
@@ -71,15 +75,25 @@ PERSON = {
         {"@type": "CollegeOrUniversity", "name": "University of Oxford", "url": "https://www.ox.ac.uk/"},
     ],
     "nationality": {"@type": "Country", "name": "Indonesia"},
-    "knowsAbout": ["Solar photovoltaics", "Floating photovoltaics", "Offshore floating photovoltaics", "Battery energy storage systems",
-                   "Grid integration of renewable energy", "Ancillary services", "Reactive power", "Hosting capacity",
-                   "Solar forecasting", "Levelised cost of electricity", "Power purchase agreements", "Feasibility studies",
-                   "Bifacial PV and single-axis trackers", "PV soiling", "Off-grid and hybrid power systems", "Diesel replacement",
-                   "Rural electrification", "Power sector regulation in Indonesia", "Electricity markets", "Capacity building"],
+    # Topics in the words development banks, consultancies, and agencies use in their calls (tracker and ToR review, 20 November 2026).
+    "knowsAbout": ["Solar photovoltaics (PV)", "Floating solar PV", "Offshore floating PV", "Battery energy storage systems (BESS)",
+                   "BESS regulatory framework and business models", "Renewable energy grid integration", "Variable renewable energy (VRE) integration",
+                   "Ancillary services", "Grid codes", "Reactive power", "PV hosting capacity", "Power system planning",
+                   "Solar and VRE forecasting", "Levelised cost of electricity (LCOE)", "Levelised cost of storage (LCOS)",
+                   "Power purchase agreements (PPA) and tariffs", "Feasibility and pre-feasibility studies", "Techno-economic analysis",
+                   "Energy yield assessment", "Bifacial PV and single-axis trackers", "PV soiling", "Carbon finance",
+                   "Off-grid, island, and hybrid power systems", "Mini-grids", "Diesel-to-renewable transition", "Rural electrification",
+                   "Power sector regulation in Indonesia", "Electricity markets", "Capacity building and training for utilities"],
+    # Role titles Okto has held on assignments (Master Experience Register).
+    "hasOccupation": [{"@type": "Occupation", "name": "Scientist"}, {"@type": "Occupation", "name": "Floating PV expert"},
+                      {"@type": "Occupation", "name": "Power system and electricity industry expert"},
+                      {"@type": "Occupation", "name": "Renewable energy and power system expert"}],
     "knowsLanguage": ["English", "Indonesian", "Malay"],
-    "award": ["Springer Thesis Award (2020)", "Global Goals List, Vanity Fair and One Young World (2020)", "Gen.T List, Tatler Asia (2021)",
-              "Leader of Tomorrow, St. Gallen Symposium (2019)", "BP Advancing Energy Scholar, One Young World (2019)"],
-    "memberOf": [{"@type": "Organization", "name": "IEEE"}, {"@type": "Organization", "name": "Asosiasi Energi Surya Indonesia (AESI)"}],
+    "award": ["Springer Thesis Award (2020)", "Best Paper Award, IEEE WIECON-ECE (2020)", "Global Goals List, Vanity Fair and One Young World (2020)",
+              "Gen.T List, Tatler Asia (2021)", "Leader of Tomorrow, St. Gallen Symposium (2019)", "BP Advancing Energy Scholar, One Young World (2019)"],
+    "memberOf": [{"@type": "Organization", "name": "IEEE", "url": "https://www.ieee.org/"},
+                 {"@type": "Organization", "name": "IEA PVPS Task 13, Reliability and Performance of Photovoltaic Systems", "url": "https://iea-pvps.org/research-tasks/performance-operation-and-reliability-of-photovoltaic-systems/"},
+                 {"@type": "Organization", "name": "Solar Futures Alliance", "url": "https://solarfutures.in/"}],
     "sameAs": [LINKEDIN, SCHOLAR, ORCID, SCOPUS, HBKU],
 }
 ALVA = {"@type": "Organization", "@id": SITE + "/#alva-energi", "name": "Alva Energi", "legalName": "PT Alva Energi Lestari",
@@ -128,6 +142,39 @@ if not HAS_POSTS:
     NAV = [n for n in NAV if n[0] != "/writing/"]
 
 
+EXPERTISE_SUB = []  # (href, title) of the six expertise pages; filled in build() for the Expertise menu
+
+
+def nav_html(active):
+    cur = ' aria-current="page"'
+    out = []
+    for href, label in NAV:
+        a = f'<a href="{href}"{cur if href == active else ""}>{label}</a>'
+        if href == "/expertise/" and EXPERTISE_SUB:
+            sub = "".join(f'<li><a href="{h}">{esc(n)}</a></li>' for h, n in EXPERTISE_SUB)
+            a = (f'<div class="nav-item"><a href="{href}"{cur if href == active else ""}>{label}<span class="caret" aria-hidden="true">▾</span></a>'
+                 f'<ul class="sub">{sub}</ul></div>')
+        out.append(a)
+    return "".join(out)
+
+
+def external_links(text):
+    """Open links to other sites in a new tab (Okto, 20 November 2026)."""
+    def fix(m):
+        tag = m.group(0)
+        href = re.search(r'href="([^"]+)"', tag).group(1)
+        if not href.startswith(("http://", "https://")) or href.startswith(SITE):
+            return tag
+        if "target=" not in tag:
+            tag = tag[:-1] + ' target="_blank">'
+        if ' rel="' in tag:
+            tag = re.sub(r' rel="([^"]*)"', lambda r: r.group(0) if "noopener" in r.group(1) else f' rel="{r.group(1)} noopener"', tag)
+        else:
+            tag = tag[:-1] + ' rel="noopener">'
+        return tag
+    return re.sub(r'<a\s[^>]*href="[^"]+"[^>]*>', fix, text)
+
+
 def crumbs(items):
     return {"@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": i + 1, "name": n, "item": SITE + u} for i, (n, u) in enumerate(items)]}
@@ -135,14 +182,13 @@ def crumbs(items):
 
 def page(path, title, description, body, active=None, jsonld=None, og_type="website", full_title=None, noindex=False):
     url = SITE + path
-    cur = ' aria-current="page"'
-    nav = "".join(f'<a href="{href}"{cur if href == active else ""}>{label}</a>' for href, label in NAV)
+    nav = nav_html(active)
     ld = ""
     if jsonld:
         ld = '<script type="application/ld+json">' + json.dumps(jsonld, ensure_ascii=False) + "</script>"
-    t = full_title or (f"{title} | {NAME}" if title else f"{NAME} | Solar PV, floating PV, battery storage, and grid integration")
+    t = full_title or (f"{title} | {DISPLAY_NAME}" if title else f"{DISPLAY_NAME} | Solar PV, floating solar, battery storage (BESS), and grid integration")
     robots = "noindex, follow" if noindex else "index, follow, max-image-preview:large, max-snippet:-1"
-    return f"""<!doctype html>
+    return external_links(f"""<!doctype html>
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
@@ -155,7 +201,7 @@ def page(path, title, description, body, active=None, jsonld=None, og_type="webs
 <meta name="theme-color" content="#13233A">
 <meta property="og:type" content="{og_type}">
 <meta property="og:locale" content="en_GB">
-<meta property="og:site_name" content="{NAME}">
+<meta property="og:site_name" content="{DISPLAY_NAME}">
 <meta property="og:title" content="{esc(title or NAME)}">
 <meta property="og:description" content="{esc(description)}">
 <meta property="og:url" content="{url}">
@@ -167,23 +213,23 @@ def page(path, title, description, body, active=None, jsonld=None, og_type="webs
 <meta name="twitter:title" content="{esc(title or NAME)}">
 <meta name="twitter:description" content="{esc(description)}">
 <meta name="twitter:image" content="{SITE}/img/og.jpg">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="32x32">
+<link rel="icon" href="/favicon.svg?v=3" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
 <link rel="me" href="{LINKEDIN}">
 <link rel="me" href="{ORCID}">
 <link rel="me" href="{SCHOLAR}">
 <link rel="me" href="{HBKU}">
 {RSS_LINK if HAS_POSTS else ""}
 <link rel="preload" href="/fonts/literata-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/site.css?v={CSS_V}">
 {ld}
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="site-name" href="/">{MARK}<span>{NAME}</span></a>
+    <a class="site-name" href="/">{MARK}<span>{DISPLAY_NAME}</span></a>
     <nav class="nav" aria-label="Main">{nav}</nav>
   </div>
 </header>
@@ -207,7 +253,7 @@ def page(path, title, description, body, active=None, jsonld=None, og_type="webs
 {FILTER_JS if path == "/publications/" else ""}
 </body>
 </html>
-"""
+""")
 
 
 RSS_LINK = f'<link rel="alternate" type="application/rss+xml" title="Writing by {NAME}" href="/feed.xml">'
@@ -271,7 +317,8 @@ def portrait(sizes="15rem", eager=True):
 def media_li(m):
     t = f'<a href="{esc(m["url"])}">{esc(m["title"])}</a>' if m.get("url") else esc(m["title"])
     note = f'<span class="note-line">{esc(m["note"])}</span>' if m.get("note") else ""
-    return (f'<li class="media-item"><span class="year">{esc(m["date"][:4])}</span><div><span class="outlet">{esc(m["outlet"])}</span>'
+    note = (" " + note) if note else ""
+    return (f'<li class="media-item"><span class="year">{esc(m["date"][:4])}</span> <div><span class="outlet">{esc(m["outlet"])}</span> '
             f'<span class="m-title">{t}</span>{note}</div></li>')
 
 
@@ -310,6 +357,8 @@ def build():
     def topic_meta(slug):
         return pages["expertise/" + slug][0]
 
+    EXPERTISE_SUB[:] = [(f"/expertise/{slug}/", topic_meta(slug)["title"]) for _, slug, _ in TOPICS]
+
     topics_html = "".join(
         f'<li><h3><a href="/expertise/{slug}/">{esc(topic_meta(slug)["title"])}</a></h3><p>{esc(topic_meta(slug)["summary"])}</p></li>'
         for tag, slug, _ in TOPICS)
@@ -334,13 +383,13 @@ def build():
 </section>''') if posts else ""
     media_home = "".join(media_li(m) for m in NEWS[:3])
     orgs_html = "".join(f'<div><h3>{esc(g)}</h3><ul>{"".join(f"<li>{esc(o)}</li>" for o in items)}</ul></div>' for g, items in P.ORGS)
-    orgs_section = f'<div class="orgs">{orgs_html}</div><p class="small-note">{esc(P.ORGS_NOTE)}</p>'
+    orgs_section = f'<div class="orgs">{orgs_html}</div>' + (f'<p class="small-note">{esc(P.ORGS_NOTE)}</p>' if P.ORGS_NOTE else "")
     home_body = f"""
 <section class="hero" aria-labelledby="intro-name">
   <div class="wrap">
     <div class="intro">
       <div>
-        <h1 id="intro-name">{NAME}</h1>
+        <h1 id="intro-name">{DISPLAY_NAME}</h1>
         <p class="lede">{esc(P.LEDE)}</p>
         <p class="standing">{esc(P.STANDING)}</p>
         <ul class="links"><li><a href="/about/">More about me</a></li><li><a href="/publications/">Publications</a></li><li><a href="{SCHOLAR}">Google Scholar</a></li><li><a href="{LINKEDIN}">LinkedIn</a></li></ul>
@@ -389,8 +438,8 @@ def build():
         person, ALVA,
         {"@type": "WebSite", "@id": SITE + "/#website", "url": SITE + "/", "name": NAME, "publisher": {"@id": PERSON_ID}, "inLanguage": "en-GB"},
         {"@type": "ProfilePage", "@id": SITE + "/#profilepage", "url": SITE + "/", "mainEntity": {"@id": PERSON_ID}, "dateModified": MODIFIED}]}
-    home_desc = ("Dr Oktoviano (Okto) Gandhi works on solar PV, floating PV, battery storage, grid integration, and techno-economics, "
-                 "mostly in Southeast Asia. Scientist at QEERI, Hamad Bin Khalifa University; previously eleven years at SERIS, National University of Singapore.")
+    home_desc = ("Dr Oktoviano (Okto) Gandhi works on solar PV, floating solar, battery energy storage (BESS), grid integration and ancillary services, "
+                 "and feasibility studies, mostly in Southeast Asia. Scientist at QEERI, Hamad Bin Khalifa University; previously eleven years at SERIS, National University of Singapore.")
     write("/", page("/", "", home_desc, home_body, jsonld=home_ld))
     urls.append("/")
 
@@ -441,7 +490,8 @@ def build():
              "author": {"@id": PERSON_ID}, "about": {"@type": "Thing", "name": meta["title"]}, "dateModified": MODIFIED,
              "mentions": [pub_ld(p, "ScholarlyArticle") for p in related[:12]]},
             crumbs([("Home", "/"), ("Expertise", "/expertise/"), (meta["title"], f"/expertise/{slug}/")])]}
-        write(f"/expertise/{slug}/", page(f"/expertise/{slug}/", meta["title"], meta["description"], tbody, active="/expertise/", jsonld=ld))
+        seo = f'{meta["seo_title"]} | {DISPLAY_NAME}' if meta.get("seo_title") else None
+        write(f"/expertise/{slug}/", page(f"/expertise/{slug}/", meta["title"], meta["description"], tbody, active="/expertise/", jsonld=ld, full_title=seo))
         urls.append(f"/expertise/{slug}/")
 
     # Publications
@@ -462,19 +512,18 @@ def build():
     urls.append("/publications/")
 
     # Media
-    news_html = "".join(media_li(m) for m in NEWS)
-    rec_html = "".join(media_li(m) for m in RECOGNITION)
+    coverage = sorted(NEWS + RECOGNITION, key=lambda m: m["date"], reverse=True)  # one list, newest first (Okto, 20 November 2026)
+    news_html = "".join(media_li(m) for m in coverage)
     talks_html = "".join(media_li(m) for m in TALKS)
     media_body = f"""
 <div class="wrap page-head"><h1>Media, recognition, and talks</h1><p class="dek">Coverage of my work, awards, and selected talks and panels. For media requests, email <a href="mailto:{EMAIL}">{EMAIL}</a>.</p></div>
 <div class="wrap page-body"><div class="prose">
-<h2>In the media</h2><ul class="media-list">{news_html}</ul>
-<h2>Recognition</h2><ul class="media-list">{rec_html}</ul>
+<h2>In the media and recognition</h2><ul class="media-list">{news_html}</ul>
 <h2>Talks and panels</h2><ul class="media-list">{talks_html}</ul>
 </div></div>"""
     media_ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "CollectionPage", "url": SITE + "/media/", "name": f"{NAME} in the media", "about": {"@id": PERSON_ID},
-         "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": news_ld(m)} for i, m in enumerate(NEWS)]}},
+         "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": news_ld(m)} for i, m in enumerate(coverage)]}},
         crumbs([("Home", "/"), ("Media", "/media/")])]}
     write("/media/", page("/media/", "Media", f"{NAME} in the media, including AP News on floating solar, with awards and selected talks on floating PV, grid integration, and the energy transition in Southeast Asia.",
                           media_body, active="/media/", jsonld=media_ld))
@@ -535,13 +584,13 @@ def redirect_page(old, new):
 
 def llms_txt(pages):
     lines = [f"# {NAME}", "",
-             "> Dr Oktoviano (Okto) Gandhi is a solar PV and power systems specialist: floating PV, battery storage, grid integration and ancillary services, "
+             "> Dr Oktoviano (Okto) Gandhi is a solar PV and power systems specialist: floating solar PV, battery energy storage systems (BESS), grid integration and ancillary services, "
              "solar forecasting, PV performance, and techno-economics, mostly in Southeast Asia. Scientist at the Qatar Environment and Energy Research Institute "
              "(QEERI), Hamad Bin Khalifa University; previously eleven years at the Solar Energy Research Institute of Singapore (SERIS), National University of Singapore; "
              "co-founder of Alva Energi, Indonesia. Indonesian; works in English, Indonesian, and Malay.", "",
              "Key facts: feasibility studies for more than 7 GWp of PV and 1 GWh of battery storage (ADB, World Bank, IDB, USAID, and private clients); "
              "maintained the SERIS Global Floating PV Database (about 1,700 projects in 66 countries, 2022 to 2026); one of three main authors of GIZ studies for "
-             "Indonesia's Ministry of Energy and Mineral Resources on ancillary services and on battery storage regulation; led PV grid integration in Singapore's "
+             "Indonesia's Ministry of Energy and Mineral Resources on ancillary services and on battery storage regulation, and a financial model for the ministry to test draft benchmark prices for PV and battery storage; led PV grid integration in Singapore's "
              "national solar forecasting programme for the Energy Market Authority and Singapore Power (2019 to 2022); more than 50 peer-reviewed publications "
              "with more than 3,000 citations; PhD, National University of Singapore; MPhys, University of Oxford.", "",
              "## Profile", "",
@@ -598,6 +647,11 @@ def _rest(urls, posts, pages, all_pubs):
             f"<item><title>{esc(m['title'])}</title><link>{SITE}/{m['slug']}/</link><guid>{SITE}/{m['slug']}/</guid><description>{esc(m['description'])}</description><pubDate>{date.fromisoformat(m['date']).strftime('%a, %d %b %Y')} 00:00:00 +0000</pubDate></item>"
             for m, _ in posts)
         (DIST / "feed.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Writing by {NAME}</title><link>{SITE}/writing/</link><description>Articles on solar PV, battery storage, and grid integration.</description><language>en-gb</language>{items}</channel></rss>', encoding="utf-8")
+    # favicon.ico: browsers and Google ask for it at the root; wrap the 32 px PNG in an ICO container.
+    png = (ROOT / "static" / "favicon-32.png").read_bytes()
+    ico = (b"\x00\x00\x01\x00\x01\x00" + bytes([32, 32, 0, 0]) + (1).to_bytes(2, "little") + (32).to_bytes(2, "little")
+           + len(png).to_bytes(4, "little") + (22).to_bytes(4, "little") + png)
+    (DIST / "favicon.ico").write_bytes(ico)
     (DIST / "CNAME").write_text("ogandhi.com\n", encoding="utf-8")
     (DIST / ".nojekyll").write_text("", encoding="utf-8")
     print(f"Built {len(urls)} pages and {len(REDIRECTS)} redirects into {DIST}")
