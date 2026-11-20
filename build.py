@@ -29,6 +29,7 @@ SCHOLAR = "https://scholar.google.com.sg/citations?user=0H3VhVQAAAAJ&hl=en"
 ORCID = "https://orcid.org/0000-0002-7003-2986"
 HBKU = "https://www.hbku.edu.qa/en/staff/oktoviano-gandhi"
 SCOPUS = "https://www.scopus.com/authid/detail.uri?authorId=57192808691"
+WIKIDATA = "https://www.wikidata.org/wiki/Q142228222"  # created 20 November 2026 (Okto's account)
 ALVA_URL = "https://alvaenergi.com/"
 TODAY = date.today().isoformat()
 # Full ISO 8601 date-time with time zone: Google rejects a bare date in ProfilePage dateModified.
@@ -44,6 +45,7 @@ from media import NEWS, RECOGNITION, TALKS  # noqa: E402
 # Expertise areas: (tag, slug, short label for filters)
 TOPICS = [
     ("fpv", "floating-pv", "Floating PV"),
+    ("bess", "battery-storage", "Battery storage (BESS)"),
     ("grid", "grid-integration", "Grid integration and regulation"),
     ("forecast", "solar-forecasting", "Solar forecasting"),
     ("perf", "pv-performance", "PV performance and technology"),
@@ -94,7 +96,7 @@ PERSON = {
     "memberOf": [{"@type": "Organization", "name": "IEEE", "url": "https://www.ieee.org/"},
                  {"@type": "Organization", "name": "IEA PVPS Task 13, Reliability and Performance of Photovoltaic Systems", "url": "https://iea-pvps.org/research-tasks/performance-operation-and-reliability-of-photovoltaic-systems/"},
                  {"@type": "Organization", "name": "Solar Futures Alliance", "url": "https://solarfutures.in/"}],
-    "sameAs": [LINKEDIN, SCHOLAR, ORCID, SCOPUS, HBKU],
+    "sameAs": [LINKEDIN, SCHOLAR, ORCID, SCOPUS, WIKIDATA, HBKU],
 }
 ALVA = {"@type": "Organization", "@id": SITE + "/#alva-energi", "name": "Alva Energi", "legalName": "PT Alva Energi Lestari",
         "url": ALVA_URL, "foundingDate": "2017", "founder": {"@id": PERSON_ID}, "areaServed": "Indonesia"}
@@ -602,7 +604,7 @@ def llms_txt(pages):
     for tag, slug, _ in TOPICS:
         m = pages["expertise/" + slug][0]
         lines.append(f"- [{m['title']}]({SITE}/expertise/{slug}/): {m['summary']}")
-    lines += ["", "## Elsewhere", "", f"- [LinkedIn]({LINKEDIN})", f"- [Google Scholar]({SCHOLAR})", f"- [ORCID]({ORCID})", f"- [Scopus author profile]({SCOPUS})", f"- [Hamad Bin Khalifa University staff profile]({HBKU})", f"- [Alva Energi]({ALVA_URL})", "",
+    lines += ["", "## Elsewhere", "", f"- [LinkedIn]({LINKEDIN})", f"- [Google Scholar]({SCHOLAR})", f"- [ORCID]({ORCID})", f"- [Scopus author profile]({SCOPUS})", f"- [Wikidata]({WIKIDATA})", f"- [Hamad Bin Khalifa University staff profile]({HBKU})", f"- [Alva Energi]({ALVA_URL})", "",
               "## Optional", "", f"- [Full text of the main pages]({SITE}/llms-full.txt)", "", f"Contact: {EMAIL}", ""]
     return "\n".join(lines)
 
