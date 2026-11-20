@@ -29,6 +29,9 @@ SCHOLAR = "https://scholar.google.com.sg/citations?user=0H3VhVQAAAAJ&hl=en"
 ORCID = "https://orcid.org/0000-0002-7003-2986"
 HBKU = "https://www.hbku.edu.qa/en/staff/oktoviano-gandhi"
 SCOPUS = "https://www.scopus.com/authid/detail.uri?authorId=57192808691"
+# Cloudflare Web Analytics (cookie-free visit counts; site added 20 November 2026; the token is public by design).
+# The site is DNS-only on Cloudflare, so the beacon has to be in the page rather than injected by Cloudflare.
+CF_BEACON = """<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "f3089bfc33394ab48e47fe63c7bae97c"}'></script>"""
 WIKIDATA = "https://www.wikidata.org/wiki/Q142228222"  # created 20 November 2026 (Okto's account)
 ALVA_URL = "https://alvaenergi.com/"
 TODAY = date.today().isoformat()
@@ -253,10 +256,11 @@ def page(path, title, description, body, active=None, jsonld=None, og_type="webs
       <li><a href="{HBKU}" rel="me">HBKU profile</a></li>
       {RSS_LI if HAS_POSTS else ""}
     </ul>
-    <p class="small">© {date.today().year} {NAME}. Views on this site are my own.</p>
+    <p class="small">© {date.today().year} {NAME}. Views on this site are my own. Visits are counted with Cloudflare Web Analytics, which sets no cookies.</p>
   </div>
 </footer>
 {FILTER_JS if path == "/publications/" else ""}
+{CF_BEACON}
 </body>
 </html>
 """)
