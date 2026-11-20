@@ -182,7 +182,10 @@ def crumbs(items):
         {"@type": "ListItem", "position": i + 1, "name": n, "item": SITE + u} for i, (n, u) in enumerate(items)]}
 
 
-def page(path, title, description, body, active=None, jsonld=None, og_type="website", full_title=None, noindex=False):
+LANG_ALTERNATES = [("en", "/"), ("id", "/id/"), ("x-default", "/")]  # home page and its Indonesian version (hreflang)
+
+
+def page(path, title, description, body, active=None, jsonld=None, og_type="website", full_title=None, noindex=False, lang="en-GB"):
     url = SITE + path
     nav = nav_html(active)
     ld = ""
@@ -190,19 +193,20 @@ def page(path, title, description, body, active=None, jsonld=None, og_type="webs
         ld = '<script type="application/ld+json">' + json.dumps(jsonld, ensure_ascii=False) + "</script>"
     t = full_title or (f"{title} | {DISPLAY_NAME}" if title else f"{DISPLAY_NAME} | Solar PV, floating solar, battery storage (BESS), and grid integration")
     robots = "noindex, follow" if noindex else "index, follow, max-image-preview:large, max-snippet:-1"
+    alternates = "".join(f'<link rel="alternate" hreflang="{h}" href="{SITE}{u}">' for h, u in LANG_ALTERNATES) if path in ("/", "/id/") else ""
     return external_links(f"""<!doctype html>
-<html lang="en-GB">
+<html lang="{lang}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(t)}</title>
 <meta name="description" content="{esc(description)}">
 <meta name="robots" content="{robots}">
-<link rel="canonical" href="{url}">
+<link rel="canonical" href="{url}">{alternates}
 <meta name="author" content="{NAME}">
 <meta name="theme-color" content="#13233A">
 <meta property="og:type" content="{og_type}">
-<meta property="og:locale" content="en_GB">
+<meta property="og:locale" content="{"id_ID" if lang == "id" else "en_GB"}">
 <meta property="og:site_name" content="{DISPLAY_NAME}">
 <meta property="og:title" content="{esc(title or NAME)}">
 <meta property="og:description" content="{esc(description)}">
@@ -302,10 +306,22 @@ def pub_ld(p, kind):
     return item
 
 
+OLD = {}          # previous build's text files, so unchanged pages keep their dates (stable builds, small publishes)
+OLD_LASTMOD = {}  # previous sitemap's lastmod per page
+CHANGED = {}      # path -> whether the page changed in this build
+
+
 def write(path, content):
     out = DIST / path.lstrip("/")
     if path.endswith("/"):
         out = out / "index.html"
+    prev = OLD.get(str(out.relative_to(DIST)))
+    changed = True
+    if prev is not None:
+        m = re.search(r'"dateModified": "([^"]+)"', prev)
+        if (content.replace(MODIFIED, m.group(1)) if m else content) == prev:
+            content, changed = prev, False
+    CHANGED[path] = changed
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(content, encoding="utf-8")
 
@@ -336,6 +352,10 @@ def news_ld(m):
 
 def build():
     if DIST.exists():
+        for f in DIST.rglob("*"):
+            if f.is_file() and f.suffix in (".html", ".txt", ".xml"):
+                OLD[str(f.relative_to(DIST))] = f.read_text(encoding="utf-8")
+        OLD_LASTMOD.update(re.findall(r"<loc>" + re.escape(SITE) + r"([^<]+)</loc><lastmod>([^<]+)</lastmod>", OLD.get("sitemap.xml", "")))
         shutil.rmtree(DIST)
     shutil.copytree(ROOT / "static", DIST)
     urls = []
@@ -394,7 +414,7 @@ def build():
         <h1 id="intro-name">{DISPLAY_NAME}</h1>
         <p class="lede">{esc(P.LEDE)}</p>
         <p class="standing">{esc(P.STANDING)}</p>
-        <ul class="links"><li><a href="/about/">More about me</a></li><li><a href="/publications/">Publications</a></li><li><a href="{SCHOLAR}">Google Scholar</a></li><li><a href="{LINKEDIN}">LinkedIn</a></li></ul>
+        <ul class="links"><li><a href="/about/">More about me</a></li><li><a href="/publications/">Publications</a></li><li><a href="{SCHOLAR}">Google Scholar</a></li><li><a href="{LINKEDIN}">LinkedIn</a></li><li><a href="/id/" hreflang="id" lang="id">Bahasa Indonesia</a></li></ul>
       </div>
       {portrait()}
     </div>
@@ -444,6 +464,19 @@ def build():
                  "and feasibility studies, mostly in Southeast Asia. Scientist at QEERI, Hamad Bin Khalifa University; previously eleven years at SERIS, National University of Singapore.")
     write("/", page("/", "", home_desc, home_body, jsonld=home_ld))
     urls.append("/")
+
+    # Indonesian version: one summary page (Okto, 20 November 2026)
+    meta, body = pages["id"]
+    id_body = f"""
+<div class="wrap page-head"><p class="kicker"><a href="/" hreflang="en" lang="en">English</a></p><h1>{DISPLAY_NAME}</h1></div>
+<div class="wrap page-body"><div class="about-grid"><div class="prose">{md(body)}</div>
+{portrait(eager=False)}</div></div>"""
+    id_ld = {"@context": "https://schema.org", "@graph": [
+        {"@type": "ProfilePage", "url": SITE + "/id/", "inLanguage": "id", "dateModified": MODIFIED, "mainEntity": {"@id": PERSON_ID}},
+        crumbs([("Beranda", "/"), ("Bahasa Indonesia", "/id/")])]}
+    write("/id/", page("/id/", meta["title"], meta["description"], id_body, jsonld=id_ld, og_type="profile",
+                       full_title=meta["seo_title"], lang="id"))
+    urls.append("/id/")
 
     # About
     meta, body = pages["about"]
@@ -599,7 +632,8 @@ def llms_txt(pages):
              f"- [About]({SITE}/about/): biography, education, memberships, and recognition",
              f"- [Experience]({SITE}/experience/): selected assignments since 2015, by type of problem",
              f"- [Media, recognition, and talks]({SITE}/media/): press coverage (including AP News, 2026), awards, and talks",
-             f"- [Publications]({SITE}/publications/): books, journal articles, reports, and conference papers, with DOIs", "",
+             f"- [Publications]({SITE}/publications/): books, journal articles, reports, and conference papers, with DOIs",
+             f"- [Profil dalam Bahasa Indonesia]({SITE}/id/): profile and work in Indonesia, in Indonesian", "",
              "## Expertise", ""]
     for tag, slug, _ in TOPICS:
         m = pages["expertise/" + slug][0]
@@ -635,7 +669,7 @@ def _rest(urls, posts, pages, all_pubs):
             continue  # a real page lives here now
         write(old if old.endswith("/") or old.endswith(".html") else old + "/", redirect_page(old, new))
 
-    sm = "".join(f"<url><loc>{SITE}{u}</loc><lastmod>{TODAY}</lastmod></url>" for u in urls)
+    sm = "".join(f"<url><loc>{SITE}{u}</loc><lastmod>{OLD_LASTMOD.get(u, TODAY) if not CHANGED.get(u, True) else TODAY}</lastmod></url>" for u in urls)
     (DIST / "sitemap.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{sm}</urlset>', encoding="utf-8")
     bots = ["Googlebot", "Bingbot", "Google-Extended", "GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot",
             "Claude-User", "PerplexityBot", "Perplexity-User", "Applebot-Extended", "CCBot"]
@@ -643,7 +677,11 @@ def _rest(urls, posts, pages, all_pubs):
         f"User-agent: {b}\nAllow: /\n\n" for b in bots) + f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n"
     (DIST / "robots.txt").write_text(robots, encoding="utf-8")
     (DIST / "llms.txt").write_text(llms_txt(pages), encoding="utf-8")
-    (DIST / "llms-full.txt").write_text(llms_full(pages, all_pubs), encoding="utf-8")
+    full = llms_full(pages, all_pubs)
+    prev = OLD.get("llms-full.txt", "")
+    if re.sub(r"\(generated [0-9-]+\)", "", prev) == re.sub(r"\(generated [0-9-]+\)", "", full):
+        full = prev  # only the date line would change
+    (DIST / "llms-full.txt").write_text(full, encoding="utf-8")
     if posts:
         items = "".join(
             f"<item><title>{esc(m['title'])}</title><link>{SITE}/{m['slug']}/</link><guid>{SITE}/{m['slug']}/</guid><description>{esc(m['description'])}</description><pubDate>{date.fromisoformat(m['date']).strftime('%a, %d %b %Y')} 00:00:00 +0000</pubDate></item>"
