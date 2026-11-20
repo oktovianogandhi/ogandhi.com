@@ -14,6 +14,7 @@ Key facts: feasibility studies for more than 7 GWp of PV and 1 GWh of battery st
 ## Expertise
 
 - [Floating solar PV](https://ogandhi.com/expertise/floating-pv/): Where floating PV makes sense, what it costs compared with ground-mounted PV, and how to take a reservoir, lagoon, or coastal site from screening to feasibility.
+- [Battery energy storage (BESS)](https://ogandhi.com/expertise/battery-storage/): Where batteries add value in a power system, how to size and dispatch them, and how regulation, contracts, and prices can make storage projects bankable.
 - [Grid integration, ancillary services, and regulation](https://ogandhi.com/expertise/grid-integration/): How much solar PV and battery storage a power system can take, which integration measures cost least, and how regulation and markets can make them happen.
 - [Solar forecasting and its value](https://ogandhi.com/expertise/solar-forecasting/): What a better solar forecast is worth to markets, system operators, and plant owners, and how to produce forecasts that quantify their own uncertainty.
 - [PV performance and technology choice](https://ogandhi.com/expertise/pv-performance/): Which modules, mounting structures, and trackers give the lowest cost of electricity at a given site, and how climate, albedo, and dust change the answer.
@@ -26,6 +27,7 @@ Key facts: feasibility studies for more than 7 GWp of PV and 1 GWh of battery st
 - [Google Scholar](https://scholar.google.com.sg/citations?user=0H3VhVQAAAAJ&hl=en)
 - [ORCID](https://orcid.org/0000-0002-7003-2986)
 - [Scopus author profile](https://www.scopus.com/authid/detail.uri?authorId=57192808691)
+- [Wikidata](https://www.wikidata.org/wiki/Q142228222)
 - [Hamad Bin Khalifa University staff profile](https://www.hbku.edu.qa/en/staff/oktoviano-gandhi)
 - [Alva Energi](https://alvaenergi.com/)
 
