@@ -26,7 +26,7 @@ More than 50 peer-reviewed publications and two books with Springer Nature, with
 ## Memberships and roles
 
 - Contributor to the International Energy Agency Photovoltaic Power Systems Programme (IEA PVPS) Task 13, Reliability and Performance of Photovoltaic Systems, since 2022.
-- Senior Policy Fellow, Renewable Energy Systems and Energy Transition Strategy, [Solar Futures Alliance](https://solarfutures.in/our-people.html), an international non-profit think tank on solar-led development in the Global South (honorary and advisory).
+- Senior Policy Fellow, Renewable Energy Systems and Energy Transition Strategy, [Solar Futures Alliance](https://solarfutures.in/our-people.html), an international non-profit think tank on solar-led development in the Global South (honorary and advisory), since 2026.
 - Institute of Electrical and Electronics Engineers (IEEE).
 
 ## Recognition

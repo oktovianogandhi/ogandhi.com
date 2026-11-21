@@ -37,12 +37,12 @@ I have worked across the project cycle of solar photovoltaic (PV) and battery st
 ## Island and off-grid systems
 
 - **Diesel replacement on an industrial island grid, Riau Islands, Indonesia, 2015 to 2018.** Researcher for NRF Singapore and an industrial client: site visits, load measurements, a control and energy management framework for a 24 MVA isolated network, and a roadmap for PV siting, battery sizing, and phased diesel replacement, tested with hardware in the loop.
-- **Rural electrification, Sumba, East Nusa Tenggara, 2018 to 2019.** Through Alva Energi, with a student community programme: two communal off-grid PV systems serving 42 households in the village of Homba Karipit. I helped design the systems, procure the equipment, install them, and train the local operator.
+- **Rural electrification, Southwest Sumba, East Nusa Tenggara, 2018 to 2019.** Through Alva Energi, with a student community programme: two communal off-grid PV systems serving 42 households in the village of Homba Karipit. I helped design the systems, procure the equipment, install them, and train the local operator.
 - **Energy roadmap and off-grid PV, North Sumatra, 2018 to 2020.** Project manager for an orangutan sanctuary: energy needs analysis, an energy roadmap, and the planning and installation of grid-connected and off-grid PV.
 
 ## Training and capacity building
 
-- **PT PLN (Persero), MEMR, and Bappenas, since 2023.** Mostly through GIZ, and also directly for PLN's training centre (PLN Pusdiklat), including a course on optimising ancillary services for renewable grid integration (2025). Curricula, training materials, and delivery on power system expansion planning with variable renewable energy (including a training of trainers with PLN Academy), ancillary services, battery storage, demand response, pumped storage hydropower, PV power plants, variable renewable energy forecasting, and long-term electricity planning.
+- **PT PLN (Persero), MEMR, and Bappenas, since 2023.** Curricula, training materials, and delivery on power system expansion planning with variable renewable energy (including a training of trainers with PLN Academy), ancillary services, battery storage, demand response, pumped storage hydropower, PV power plants, variable renewable energy forecasting, and long-term electricity planning.
 - **Off-grid PV in Eastern Indonesia, 2022 to 2023.** Team leader for Pattimura University in Ambon, funded by New Zealand's NZMATES programme: training needs assessment, curricula for a mini-grid laboratory and a university PV course, training of six trainers, and a roadmap for a solar training centre.
 - **National University of Singapore, 2015 to 2021.** Undergraduate and graduate teaching on renewable energy, physics, and power systems, and project supervision.
 
