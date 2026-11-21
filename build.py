@@ -168,7 +168,7 @@ def external_links(text):
     def fix(m):
         tag = m.group(0)
         href = re.search(r'href="([^"]+)"', tag).group(1)
-        if not href.startswith(("http://", "https://")) or href.startswith(SITE):
+        if not (href.startswith(("http://", "https://")) and not href.startswith(SITE)) and not href.endswith(".pdf"):
             return tag
         if "target=" not in tag:
             tag = tag[:-1] + ' target="_blank">'
@@ -256,7 +256,7 @@ def page(path, title, description, body, active=None, jsonld=None, og_type="webs
       <li><a href="{HBKU}" rel="me">HBKU profile</a></li>
       {RSS_LI if HAS_POSTS else ""}
     </ul>
-    <p class="small">© {date.today().year} {NAME}. Views on this site are my own. Visits are counted with Cloudflare Web Analytics, which sets no cookies.</p>
+    <p class="small">© {date.today().year} {NAME}. Views on this site are my own.</p>
   </div>
 </footer>
 {FILTER_JS if path == "/publications/" else ""}
@@ -348,7 +348,7 @@ def news_ld(m):
     item = {"@type": m.get("schema", "NewsArticle"), "headline": m["title"], "datePublished": m["date"],
             "publisher": {"@type": "Organization", "name": m["outlet"]}, "about": {"@id": PERSON_ID}}
     if m.get("url"):
-        item["url"] = m["url"]
+        item["url"] = SITE + m["url"] if m["url"].startswith("/") else m["url"]
     return item
 
 
@@ -553,7 +553,7 @@ def build():
     # Media
     coverage = sorted(NEWS + RECOGNITION, key=lambda m: m["date"], reverse=True)  # one list, newest first (Okto, 20 November 2026)
     news_html = "".join(media_li(m) for m in coverage)
-    talks_html = "".join(media_li(m) for m in TALKS)
+    talks_html = "".join(media_li(m) for m in sorted(TALKS, key=lambda m: m["date"], reverse=True))
     media_body = f"""
 <div class="wrap page-head"><h1>Media, recognition, and talks</h1><p class="dek">Coverage of my work, awards, and selected talks and panels. For media requests, email <a href="mailto:{EMAIL}">{EMAIL}</a>.</p></div>
 <div class="wrap page-body"><div class="prose">
