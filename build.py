@@ -476,7 +476,7 @@ def build():
 <div class="wrap page-body"><div class="about-grid"><div class="prose">{md(body)}</div>
 {portrait(eager=False)}</div></div>"""
     id_ld = {"@context": "https://schema.org", "@graph": [
-        {"@type": "ProfilePage", "url": SITE + "/id/", "inLanguage": "id", "dateModified": MODIFIED, "mainEntity": {"@id": PERSON_ID}},
+        {"@type": "ProfilePage", "url": SITE + "/id/", "inLanguage": "id", "dateModified": MODIFIED, "mainEntity": person},  # full Person: Google does not follow an @id to another page
         crumbs([("Beranda", "/"), ("Bahasa Indonesia", "/id/")])]}
     write("/id/", page("/id/", meta["title"], meta["description"], id_body, jsonld=id_ld, og_type="profile",
                        full_title=meta["seo_title"], lang="id"))
