@@ -7,6 +7,15 @@ summary: Selected assignments since 2015, grouped by the kind of problem they ad
 
 I have worked across the project cycle of solar photovoltaic (PV) and battery storage projects: global screening and market data, pre-feasibility and feasibility studies, regulation and tariffs, installation, and training for the people who will operate the systems. Most of this work has been in Southeast Asia, with feasibility studies in South Asia, the Pacific, and Latin America.
 
+## Leading projects and teams
+
+- **Principal investigator**, research projects on resilient PV systems for arid environments and on grid technologies, Qatar Environment and Energy Research Institute (QEERI), since 2026.
+- **Project leader**, decarbonisation pre-feasibility study for a gas transmission company, Indonesia, 2024.
+- **Team leader**, off-grid PV capacity building for Pattimura University, Ambon, funded by New Zealand's NZMATES programme, 2022 to 2023.
+- **One of three main authors**, with Energynautics and UMBRA, of two studies for Indonesia's Ministry of Energy and Mineral Resources through GIZ, and quality assurance of national and international consultants' outputs, 2023 to 2026.
+- **Working group leader**, PV grid integration, in Singapore's national solar forecasting programme for the Energy Market Authority and Singapore Power, 2019 to 2022.
+- **Project manager**, energy roadmap and solar PV for an orangutan sanctuary in North Sumatra, 2018 to 2020.
+
 ## Feasibility and options studies
 
 - **Floating PV for development banks, 2021 to 2026.** Floating PV expert on teams led by Dornier Suntrace and Trama TecnoAmbiental (TTA):
@@ -24,7 +33,7 @@ I have worked across the project cycle of solar photovoltaic (PV) and battery st
 
 ## Power sector regulation, planning, and advisory
 
-- **GIZ Energy Programme Indonesia, since December 2023.** Expert on the Renewable Energy for Electrification Programme (REEP2), Clean, Affordable and Secure Energy for Southeast Asia (CASE), and Green Energy projects of the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ), advising Indonesia's Ministry of Energy and Mineral Resources (MEMR) and the state electricity company, PT PLN (Persero), through GIZ:
+- **GIZ Energy Programme Indonesia, December 2023 to 2026.** Expert on the Renewable Energy for Electrification Programme (REEP2), Clean, Affordable and Secure Energy for Southeast Asia (CASE), and Green Energy projects of the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ), advising Indonesia's Ministry of Energy and Mineral Resources (MEMR) and the state electricity company, PT PLN (Persero), through GIZ:
     - one of three main authors, with Energynautics and UMBRA, of a comparative study of ancillary services for Indonesia, with workshops for MEMR, Bappenas, and PLN;
     - one of three main authors of a regulatory framework and business model for battery energy storage systems (BESS), including the power purchase agreement (PPA) price analysis for PV and wind with storage;
     - a financial model for MEMR to test draft benchmark prices for utility-scale PV, PV with battery storage, and stand-alone battery storage, reporting the levelised cost of electricity (LCOE), project and equity returns, and debt service coverage under different financing terms;
@@ -42,7 +51,7 @@ I have worked across the project cycle of solar photovoltaic (PV) and battery st
 
 ## Training and capacity building
 
-- **PT PLN (Persero), MEMR, and Bappenas, since 2023.** Curricula, training materials, and delivery on power system expansion planning with variable renewable energy (including a training of trainers with PLN Academy), ancillary services, battery storage, demand response, pumped storage hydropower, PV power plants, variable renewable energy forecasting, and long-term electricity planning.
+- **PT PLN (Persero), MEMR, and Bappenas, 2023 to 2026.** Curricula, training materials, and delivery on power system expansion planning with variable renewable energy (including a training of trainers with PLN Academy), ancillary services, battery storage, demand response, pumped storage hydropower, PV power plants, variable renewable energy forecasting, and long-term electricity planning.
 - **Off-grid PV in Eastern Indonesia, 2022 to 2023.** Team leader for Pattimura University in Ambon, funded by New Zealand's NZMATES programme: training needs assessment, curricula for a mini-grid laboratory and a university PV course, training of six trainers, and a roadmap for a solar training centre.
 - **National University of Singapore, 2015 to 2021.** Undergraduate and graduate teaching on renewable energy, physics, and power systems, and project supervision.
 

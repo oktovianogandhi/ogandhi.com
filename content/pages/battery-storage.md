@@ -21,7 +21,7 @@ Battery energy storage systems (BESS) can shift energy from solar photovoltaics 
 
 ## Where I have applied it
 
-- **Indonesia, since 2023.** Through GIZ, the BESS study, the price analysis, and the tariff model above, and training on battery storage, ancillary services, and grid integration for MEMR, Bappenas, and the state electricity company, PT PLN (Persero). [More on grid integration and ancillary services](/expertise/grid-integration/).
+- **Indonesia, 2023 to 2026.** Through GIZ, the BESS study, the price analysis, and the tariff model above, and training on battery storage, ancillary services, and grid integration for MEMR, Bappenas, and the state electricity company, PT PLN (Persero). [More on grid integration and ancillary services](/expertise/grid-integration/).
 - **Singapore, 2019 to 2022.** In the national solar forecasting programme for the Energy Market Authority (EMA) and Singapore Power (SP), we studied how distributed PV and storage affect capacity adequacy, grid stability, reserve requirements, generation mix, and prices.
 - **Islands and project development.** Battery sizing and phased diesel replacement for an industrial island grid in the Riau Islands, and storage in feasibility studies for developers and investors. [More on off-grid and island systems](/expertise/off-grid-and-islands/).
 
